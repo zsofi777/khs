@@ -1,9 +1,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background: -webkit-linear-gradient(117deg, rgb(10, 50, 226), rgb(16, 212, 121), rgb(96, 0, 206));
-    background: linear-gradient(117deg, rgb(10, 50, 226), rgb(16, 212, 121), rgb(96, 0, 206));
-    background: -webkit-radial-gradient(rgb(10, 50, 226), rgb(16, 212, 121), rgb(96, 0, 206));
-    background: radial-gradient(rgb(10, 50, 226), rgb(16, 212, 121), rgb(96, 0, 206));
+    background: -webkit-linear-gradient(117deg,  rgb(96, 0, 206), rgb(10, 50, 226), rgb(16, 212, 121));
+    background: linear-gradient(117deg, rgb(96, 0, 206), rgb(10, 50, 226), rgb(16, 212, 121));
+    background: -webkit-radial-gradient(rgb(96, 0, 206), rgb(10, 50, 226), rgb(16, 212, 121));
+    background: radial-gradient(rgb(96, 0, 206), rgb(10, 50, 226), rgb(16, 212, 121));
 }
 
 h1, h2, h3, h4, p {
@@ -556,6 +556,13 @@ ul {
 
 .footer-link:hover {
     color: #10D479;
+}
+
+.footer .footer-bottom {
+    position: relative;
+    color: #282828;
+    line-height: 24px;
+    text-align: center;
 }
 
 .webscope-text {
