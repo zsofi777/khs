@@ -45,6 +45,11 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
+a.navbar-item:focus {
+    color: #9adcc7;
+    text-decoration: none;
+}
+
 .hero-background {
     /*
     overflow: hidden;
