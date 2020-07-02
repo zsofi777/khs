@@ -1,0 +1,383 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KHS</title>
+    <meta name="Nova theme" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/themes/default/style.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+
+</head>
+
+<body>
+
+<!-- Navigation
+  ================================================== -->
+  <div class="container">
+    <div class="header-container header">
+        <a class="navbar-brand logo" href="index.html"> 
+            <img class="logo" src="assets/images/KHS.png"/>
+        </a>
+        <!--<a href="#email-form">
+            <button class="header-btn"> Download FREE!</button>
+        </a>-->
+        <div class="header-right">
+            <a class="navbar-item" href="aktualitasok.html">Aktualitások</a>
+            <a class="navbar-item" href="terkepek.html">Térképek</a>
+            <a class="navbar-item" href="adattablak.html">Adattáblák</a>
+            <a class="navbar-item" href="meta-adatbazis.html" style="color: #25F18B;">Meta-adatbázis</a>
+        </div>
+    </div>
+  </div>
+      <!--navigation-->
+      
+      <div class="container">
+          <div class="wrapper clearfix">
+      <fieldset id="search">
+          <input type="text" name="search_field" id="search_field" value="">
+          <button id="search_tree">KERESÉS</button>
+      </fieldset>
+      
+                  <div id="FaDoboz" class="Tree">
+                  <h3>Mutatók</h3>
+      
+                  <div id="SimpleJSTree" class="jstree jstree-1 jstree-default" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="Kator" aria-busy="false">
+                      <ul class="jstree-container-ul jstree-children" role="group">
+                          <li role="treeitem" aria-selected="true" aria-level="1" aria-labelledby="Katmu_anchor" aria-expanded="false" id="Katmu" class="jstree-node jstree-closed">
+                              <i class="jstree-icon jstree-ocl" role="presentation"></i>
+                              <a class="jstree-anchor jstree-clicked" href="#" tabindex="-1" id="Katmu_anchor">
+                                  <i class="jstree-icon jstree-themeicon" role="presentation"></i>MUTATÓK SZERINT
+                              </a>
+                          </li>
+                          <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kator_anchor" aria-expanded="false" id="Kator" class="jstree-node  jstree-closed">
+                              <i class="jstree-icon jstree-ocl" role="presentation"></i>
+                              <a class="jstree-anchor" href="#" tabindex="-1" id="Kator_anchor">
+                                  <i class="jstree-icon jstree-themeicon" role="presentation"></i>ORSZÁGOK SZERINT
+                              </a>
+                          </li>
+                          <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Katter_anchor" aria-expanded="false" id="Katter" class="jstree-node  jstree-closed jstree-last">
+                              <i class="jstree-icon jstree-ocl" role="presentation"></i>
+                              <a class="jstree-anchor" href="#" tabindex="-1" id="Katter_anchor">
+                                  <i class="jstree-icon jstree-themeicon" role="presentation"></i>TERÜLETI SZINTEK SZERINT
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  </div>	
+              <div id="Leiro" class="Desc">
+              <h3>Leírás</h3>
+              <div id="data"></div>
+              </div>	
+          </div>
+      </div>
+  
+<!-- Footer
+  ================================================== -->
+
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <!--Big Column-->
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+
+                    <!--Footer Column-->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="contact-widget">
+                            <a class="navbar-brand logo" href="index.html"> 
+                                <img class="logo" style="padding-top: 14px; max-width: 66px;" src="assets/images/KHSfooter.png"/>
+                            </a>
+                            <div class="widget-content">
+                                <h4 class="header-headline" style="font-size: 16px; padding-top: 65px; color: #282828;">Kárpát-haza statisztikák</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Footer Column-->
+                    
+                    <!--Footer Column-->
+                    <div class="col-md-4 col-sm-4 col-xs-12" style="text-align: center;">
+                        <div class="posts-widget">
+                            <h2>Információk</h2>
+                            <div class="widget-content">
+                                 <ul class="rules-links" style="padding-left: 0; font-size: 16px;">
+                                    <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="adatkezeles-rendje.html" class="footer-link">Adatkezelés rendje</a></li>                                   
+                                    <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="impresszum.html" class="footer-link">Impresszum</a></li>
+                                 </ul> 
+                            </div> 
+                        </div>	                                 	
+                     </div><!--End Footer Column-->
+                    
+                    <!--Footer Column-->
+                    <div class="col-md-4 col-sm-4 col-xs-12" style="text-align: right;">
+                        <h2 class="ftco-heading-2">Linkek</h2>
+                        <ul class="list-unstyled">
+                          <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="aktualitasok.html" class="footer-link">Aktualitások</a></li>
+                          <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="terkepek.html" class="footer-link">Térképek</a></li>
+                          <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="adattablak.html" class="footer-link">Adattáblák</a></li>
+                          <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="meta-adatbazis.html" class="footer-link">Meta-adatbázis</a></li>
+                        </ul>
+                    </div>
+                    <!--End Footer Column-->
+                                              
+                </div>
+            </div>
+            <!--End Big Column-->
+            
+        </div>
+    </div>
+    <!--container-->
+</div>
+<!--footer-->
+
+
+
+ 
+  <style>
+    body {
+        font-size: 15px;
+        font-weight: bold; 
+        margin: 0px;
+        background-image: url('assets/images/214.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+   
+    .container {
+        width: 100%;
+    }
+    h1 {
+        font-family: 'Roboto Condensed', serif !important;
+        margin: 0px !important;
+    }
+    h3, .h3 {
+        font-size: 28px;
+        font-weight: 900;
+        letter-spacing: -1px;
+        font-family: 'Roboto',sans-serif !important;
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 900;
+        letter-spacing: -1px;
+        font-family: 'Roboto',sans-serif !important;
+    }
+    strong {
+        font-size: 14px;
+    }
+    a:hover, a:focus {
+        text-decoration: none; 
+    }
+    .Tree {
+        border: none;
+        float: left; 
+        padding: 50px 20px 20px 20px;
+        min-height: 170px;
+        box-sizing: border-box;
+        border-left: 2px solid #365f92;
+        font-family: 'Roboto',sans-serif !important;
+        font-weight: bold;
+    }
+    .Tree a {
+        text-decoration: none;
+    }
+    .Tree a:hover {
+        color: #333 !important;
+    }
+    .Tree a:active {
+        color: #333 !important;
+    }
+    
+    .Desc {
+        border: none;
+        float: left; 
+        padding: 50px 20px 20px 20px;
+        min-height: 170px;
+        line-height: 24px;
+        box-sizing: border-box;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        border-left: 2px solid #365f92;
+    }
+    .Tree {            
+        width: 75%;             
+    }
+    .Desc {
+        width: 20%; 
+        margin-left: 10px;
+    }
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    /* replace folder icons with another image, remove leaf image */
+    .jstree-default .jstree-open>.jstree-ocl {
+        display: none;
+    }     
+    .jstree-default .jstree-closed>.jstree-ocl {
+        display: none;
+    } 
+    .jstree-open > a .jstree-icon {
+        background:url(https://img.icons8.com/metro/24/365f92/chevron-down.png) 0px 0px no-repeat !important;
+    }
+    .jstree-closed > a .jstree-icon {
+        background:url(https://img.icons8.com/metro/24/365f92/chevron-down.png) 0px 0px no-repeat !important;
+    }
+    .jstree-leaf > a .jstree-icon { 
+        background:url(https://karpathaza.hu/wp-content/uploads/2020/01/treeStop.png) 0px 0px no-repeat !important; 
+    }
+    .glyphicon-leaf:before {
+    display: none;
+    }
+    .jstree-default a { 
+      white-space:normal !important; 
+      height: auto !important; 
+    }
+    .jstree-anchor {
+        height: auto !important;
+    }
+    a#Katmu_anchor.jstree-anchor {
+        font-weight: bold;
+    }
+    a#Kator_anchor.jstree-anchor {
+        font-weight: bold;
+    }
+    a#Katter_anchor.jstree-anchor {
+        font-weight: bold;
+    }
+    .jstree-anchor .jstree-clicked .jstree-hovered {
+        color: #333;
+    }
+    .jstree-default .jstree-clicked {
+        background: #365f92;
+    }
+    .jstree-default .jstree-hovered {
+        background: transparent;
+        border: none;
+    }
+    .jstree-default li > ins { 
+        vertical-align:top; 
+    }
+    .jstree-leaf {
+        height: auto;
+    }
+    .jstree-leaf a{
+        height: auto !important;
+    }
+    .jstree a:visited {
+        background: #d0d0d0;
+    }
+    .jstree a:focus {
+        color: #333 !important;
+    }
+    .jstree-default .jstree-search {
+        font-style: italic;
+        color: #e93f49;
+    }
+    .main-footer .footer-widget h2 {
+        position: relative;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 25px;
+        padding-bottom: 13px;
+        color: #ffffff;
+    }
+    div.footer-widget.contact-widget h2 {
+        font-family: 'Roboto Condensed', serif !important;
+        letter-spacing: normal  !important;
+        margin-top: 0px !important;
+        background: none;
+        line-height: 1.5em;
+    }
+    div.footer-widget.posts-widget h2 {
+        font-family: 'Roboto Condensed', serif !important;
+        letter-spacing: normal  !important;
+        margin-top: 0px !important;
+        background: none;
+        line-height: 1.5em;
+    }
+    #search {
+        margin-bottom: 3%;
+    }
+    #search input {
+        width: 22%;
+        margin-left: 2%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 2px solid #365f92;
+        box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.3);
+    }
+    #search_tree {
+        background-color: #365f92;
+        padding: 12px 20px;
+        border-radius: 3px;
+        color: #fff;
+        margin-left: 15px;
+        box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.3);
+    }
+    #search_tree:focus {
+        background-color: #1b2c42;
+    }
+    </style>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/jstree.min.js"></script>
+<script src="https://zsofi777.github.io/karpat/minden_szerint_data.js"></script>
+<script type="text/javascript">
+    function createJSTree(jsondata) {
+        $('#SimpleJSTree')
+              .on('click', '.jstree-anchor', function (e) {
+              $(this).jstree(true).toggle_node(e.target);
+               })
+.jstree({
+            "core": {                    
+                'data': jsondata,
+                themes: { dots: false }                    
+            },
+
+"plugins" : ["search"],
+"search": {
+                    "case_sensitive": false,
+                    "show_only_matches": false
+                }
+
+        }).on("select_node.jstree",
+    function(evt, data){
+        var node_id   = (data.node.id); // element id
+        var description = $("#"+node_id).attr("description"); // get value of element attribute
+        $('#data').html(description);
+    })
+    }
+
+$(document).ready(function () {
+            $("#search_tree").click(function () {  
+                var value=document.getElementById("search_field").value; 
+                $("#SimpleJSTree").jstree("search",value);  
+
+            }); 
+        });
+
+</script>
+
+
+
+</html>
