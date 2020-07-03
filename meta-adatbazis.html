@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KHS</title>
     <meta name="Nova theme" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+
+    <link rel="shortcut icon" type="image/png" href="assets/images/xxx.png"/>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -108,11 +109,11 @@
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <div class="contact-widget">
                                 <a class="navbar-brand logo" href="index.html"> 
-                                    <img class="logo" style="padding-top: 14px; max-width: 66px;" src="assets/images/KHSfooter.png"/>
-                                </a>
-                                <div class="widget-content">
-                                    <h4 class="header-headline" style="font-size: 16px; padding-top: 65px; color: #282828;">Kárpát-haza statisztikák</h4>
-                                </div>
+                                    <img class="logo" style="padding-top: 12px; max-width: 100px;" src="assets/images/KHS2.png"/>
+                            </a>
+                            <div class="widget-content">
+                                <h4 class="header-headline" style="font-size: 16px; padding-top: 60px; padding-left: 4px; color: #282828;">Kárpát-haza statisztikák</h4>
+                            </div>
                             </div>
                         </div>
                         <!--End Footer Column-->
@@ -198,10 +199,8 @@
 
     <style>
         body {
-            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,149,218,0.85) 9.9%, rgba(56,80,114,1) 100.3% );    background-position: center;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            /*background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(0,149,218,0.85) 9.9%, rgba(56,80,114,1) 100.3% );*/
+            background-image: linear-gradient( 109.6deg,  rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1% );
             font-size: 16px;
             font-weight: 600; 
             margin: 0px;
@@ -344,6 +343,14 @@
         .jstree a:focus {
             color: #282828 !important;
         }
+
+        .jstree-default a.jstree-loading .jstree-icon { 
+            background: url("assets/images/loader.gif") center center no-repeat !important; 
+        } 
+
+        .SimpleJSTree .jstree .jstree-1 .jstree-default .jstree-loading { 
+            background: url("assets/images/loader.gif") center center no-repeat !important; 
+        } 
 
         .jstree-default .jstree-search {
             color: #6000CE;

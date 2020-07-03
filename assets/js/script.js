@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    /*
     const $bg = document.querySelector(".hero-background");
     const mouseScale = 0.55;
     $bg.addEventListener("mousemove", e => {
@@ -8,7 +8,7 @@ $(document).ready(function () {
         $bg.style.setProperty("--mouseX", `${(x * mouseScale).toFixed(3)}%`);
         $bg.style.setProperty("--mouseY", `${(y * mouseScale).toFixed(3)}%`);
     });
-
+    */
     var myVideo = document.getElementById("video1");
 
     function playPause() {
