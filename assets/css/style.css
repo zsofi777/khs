@@ -102,6 +102,18 @@ a.navbar-item:focus {
     padding-top: 0px;
 }
 
+.logo2 {
+    max-width: 300px;
+    margin-left: 126px;
+    margin-top: -14px;
+}
+
+.logo3 {
+    max-width: 250px;
+    margin-left: 5px;
+    margin-top: 99px;
+}
+
 .header-btn {
     background-color: #0ABCEB;
     border-radius: 10px;
