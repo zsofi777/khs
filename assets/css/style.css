@@ -120,7 +120,7 @@ a.navbar-item:focus {
 }
 
 span.logoKHS {
-    background: url(/assets/images/logoKHS.png);
+    background: url(https://karpathaza.hu/wp-content/uploads/2020/07/logoKHS.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -134,7 +134,7 @@ span.logoKHS {
 }
 
 span.logoKHS:hover {
-    background: url(/assets/images/logoKHS.png);
+    background: url(https://karpathaza.hu/wp-content/uploads/2020/07/logoKHS.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -148,7 +148,7 @@ span.logoKHS:hover {
 }
 
 span.logoKHSfooter {
-    background: url(/assets/images/logoKHS.png);
+    background: url(https://karpathaza.hu/wp-content/uploads/2020/07/logoKHS.png);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -158,14 +158,14 @@ span.logoKHSfooter {
 }
 
 span.logoNSKI {
-    background: url(/assets/icons/logoNSKIfooter.png);
+    background: url(https://karpathaza.hu/wp-content/uploads/2020/07/logoNSKIfooter.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     display: inline-block;
     width: 225px;
     height: 144%;
-    margin-left: 292px;
+    margin-left: 280px;
     margin-top: -7px;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -173,14 +173,14 @@ span.logoNSKI {
 }
 
 span.logoNSKI:hover {
-    background: url(/assets/icons/logoNSKIfooter.png);
+    background: url(https://karpathaza.hu/wp-content/uploads/2020/07/logoNSKIfooter.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     display: inline-block;
     width: 225px;
     height: 144%;
-    margin-left: 292px;
+    margin-left: 280px;
     margin-top: -3px;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
