@@ -7,22 +7,60 @@
     <meta name="keywords" content="Nemzetstratégiai Kutatóintézet, NSKI, Kárpát-haza statisztikák">
     <meta name="author" content="Nemzetstratégiai Kutatóintézet">
 
-    <title>KHS</title>
+    <title>KÁRPÁT-HAZA STATISZTIKÁK</title>
     <meta name="Nova theme" content="width=device-width, initial-scale=1">
-
+    
     <link rel="shortcut icon" type="image/png" href="assets/images/xxx.png"/>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
           
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/responsive.css"/>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
     <style>
+      h3 {
+        font-size: 24px !important;
+      }
+      p {
+        text-align: center;
+      margin: 36px 0px 10px 0px;
+      color: #1c1c1c;
+      }
+      #ul {
+        width: 100%;
+        font-size: 10pt;
+        -webkit-box-shadow: 0 0 1em #777777;
+        box-shadow: 0 0 1em #777777;
+        background-color: white;
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        text-transform: uppercase;
+      }
+      #li a {
+        display: block;
+        color: #1C1C1C;
+        text-align: justify;
+        padding: 17px 14px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      #li a:hover {
+        background-color: #1C1C1C !important;
+        color: #fff !important;
+      }
+
+      
+      .btn {
+        max-width: 100%;
+        border-radius: 0px;
+      }
       .wp-block-columns {
         display: flex;
         margin: 20px 0;
@@ -35,82 +73,345 @@
         .wp-block-columns.has-3-columns {
           flex-flow: row wrap;
         }
-      }        
+      }
       @media (max-width: 700px) {
         .wp-block-columns.has-3-columns {
           display: block;
-        }   
+        }
         .wp-block-column {
           margin: 20px 0;
         }
-      }      
-      body {
-        /*background-image: url('assets/images/214.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;*/
-        background-image: linear-gradient( 109.6deg,  rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1% );
-      }    
-      h1 {
-        text-align: center;
-      }   
-      p {
-        text-align: center;
-        font-size: 19px;
-        font-weight: 300;
-        height: 30px;
-        margin: 36px 0px 10px 0px;
-        color: #fff;
-        font-family: 'Oswald', sans-serif;
-      }     
+      }
       .wp-block-image {
         -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3);
         box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3);
-      }    
+      }
+      
       .modal {
-        left: 6%;
-      }    
-      @media (min-width: 1700px) {
-        .modal {
-          left: 19%;
-        }
-      }   
-      iframe {
-        height: 100%;
-      }    
-      .myBtn {
-        border-radius: 0px;
-      }   
+      left: 13%;
+    }    
+    @media (min-width: 1700px) {
+      .modal {
+        left: 24%;
+      }
+    }    
+    iframe {
+      height: 100%;
+    }    
+
+      .myBtn:active,
+      .myBtn:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: solid 2px #365f92;
+      }
       .myBtn#modal1 {
-        width: 100%;
-        height: 250px;
+        width: 332px;
+        height: 248px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         border: none;
-      }   
-      .myBtn#modal1:hover {
-        border: solid 4px #25F18B;
-      }    
+      }
       .myBtn#modal2 {
         width: 100%;
-        height: 250px;
+        height: 248px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         border: none;
-      }    
-      .myBtn#modal2:hover {
-        border: solid 4px #25F18B;
-      }    
+      }
+      .myBtn#modal3 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+      .myBtn#modal4 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+      .myBtn#modal5 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+      .myBtn#modal6 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+      .myBtn#modal7 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+      .myBtn#modal8 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+      .myBtn#modal9 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal10 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal11 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal12 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal13 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal14 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal15 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal16 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal17 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal18 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal19 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal20 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal21 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal22 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal23 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal24 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal25 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal26 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal27 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal28 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal29 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal30 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
+      .myBtn#modal31 {
+        width: 100%;
+        height: 248px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+  
       .rowMap {
-          width: 332px;
-          height: 250px;
-      }      
+        width: 332px;
+        height: 248px;
+      }
       @media screen and (max-width: 700px) {
         .myBtn#modal1, 
-        .myBtn#modal2 {
+        .myBtn#modal2, 
+        .myBtn#modal3, 
+        .myBtn#modal4, 
+        .myBtn#modal5, 
+        .myBtn#modal6, 
+        .myBtn#modal7, 
+        .myBtn#modal8,
+        .myBtn#modal9, 
+        .myBtn#modal10, 
+        .myBtn#modal11, 
+        .myBtn#modal12, 
+        .myBtn#modal13, 
+        .myBtn#modal14, 
+        .myBtn#modal15, 
+        .myBtn#modal16,
+        .myBtn#modal17, 
+        .myBtn#modal18, 
+        .myBtn#modal19, 
+        .myBtn#modal20, 
+        .myBtn#modal21, 
+        .myBtn#modal22, 
+        .myBtn#modal23, 
+        .myBtn#modal24,
+        .myBtn#modal25, 
+        .myBtn#modal26, 
+        .myBtn#modal27, 
+        .myBtn#modal28, 
+        .myBtn#modal29, 
+        .myBtn#modal30, 
+        .myBtn#modal31 {
           width: 100%;
           height: 226px;
         }
@@ -118,10 +419,39 @@
           width: 100%;
           height: 226px;
         }
-      }    
+      }
       @media screen and (min-width: 701px) and (max-width: 800px) {
         .myBtn#modal1, 
-        .myBtn#modal2 {
+        .myBtn#modal2, 
+        .myBtn#modal3, 
+        .myBtn#modal4, 
+        .myBtn#modal5, 
+        .myBtn#modal6, 
+        .myBtn#modal7, 
+        .myBtn#modal8,
+        .myBtn#modal9, 
+        .myBtn#modal10, 
+        .myBtn#modal11, 
+        .myBtn#modal12, 
+        .myBtn#modal13, 
+        .myBtn#modal14, 
+        .myBtn#modal15, 
+        .myBtn#modal16,
+        .myBtn#modal17, 
+        .myBtn#modal18, 
+        .myBtn#modal19, 
+        .myBtn#modal20, 
+        .myBtn#modal21, 
+        .myBtn#modal22, 
+        .myBtn#modal23, 
+        .myBtn#modal24,
+        .myBtn#modal25, 
+        .myBtn#modal26, 
+        .myBtn#modal27, 
+        .myBtn#modal28, 
+        .myBtn#modal29, 
+        .myBtn#modal30, 
+        .myBtn#modal31 {
           width: 100%;
           height: 155px;
         }
@@ -132,10 +462,39 @@
         p {
           font-size: 14px;
         }
-      }    
+      }
       @media screen and (max-width: 1100px) and (min-width: 801px) {
         .myBtn#modal1, 
-        .myBtn#modal2 {
+        .myBtn#modal2, 
+        .myBtn#modal3, 
+        .myBtn#modal4, 
+        .myBtn#modal5, 
+        .myBtn#modal6, 
+        .myBtn#modal7, 
+        .myBtn#modal8,
+        .myBtn#modal9, 
+        .myBtn#modal10, 
+        .myBtn#modal11, 
+        .myBtn#modal12, 
+        .myBtn#modal13, 
+        .myBtn#modal14, 
+        .myBtn#modal15, 
+        .myBtn#modal16,
+        .myBtn#modal17, 
+        .myBtn#modal18, 
+        .myBtn#modal19, 
+        .myBtn#modal20, 
+        .myBtn#modal21, 
+        .myBtn#modal22, 
+        .myBtn#modal23, 
+        .myBtn#modal24,
+        .myBtn#modal25, 
+        .myBtn#modal26, 
+        .myBtn#modal27, 
+        .myBtn#modal28, 
+        .myBtn#modal29, 
+        .myBtn#modal30, 
+        .myBtn#modal31 {
           width: 100%;
           height: 222px;
         }
@@ -146,90 +505,620 @@
         p {
           font-size: 19px;
         }
-      }     
+      }
+      .myBtn:hover {
+        background-color: transparent;
+        border: solid 2px #365f92;
+      }
       #modal1 {
-        background: url("https://karpathaza.hu/wp-content/uploads/2020/01/mapMagyKm.png");
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter1.jpg");
       }
       #modal2 {
-        background: url("https://karpathaza.hu/wp-content/uploads/2020/01/mapTanarIsk.png");
-      }   
-      .close {
-        font-size: 30px;
-        color: #25F18B;
-        text-shadow: none;
-        opacity: 1;
-        float: right;
-        font-weight: 600;
-        line-height: 1;
-        margin-right: 50px;
-        margin-top: 6px;
-      }   
-      .close:hover {
-        color: #fff;
-        opacity: 1;
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter2.jpg");
       }
+      #modal3 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter3.jpg");
+      }
+      #modal4 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter4.jpg");
+      }
+      #modal5 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter5.jpg");
+      }
+      #modal6 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter6.jpg");
+      }
+      #modal7 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter7.jpg");
+      }
+      #modal8 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter8.jpg");
+      }
+      #modal9 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter9.jpg");
+      }
+      #modal10 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter10.jpg");
+      }
+      #modal11 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter11.jpg");
+      }
+      #modal12 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter12.jpg");
+      }
+      #modal13{
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter13.jpg");
+      }
+      #modal14 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter14.jpg");
+      }
+      #modal15 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter15.jpg");
+      }
+      #modal16 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter16.jpg");
+      }
+      #modal17 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter17.jpg");
+      }
+      #modal18 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter18.jpg");
+      }
+      #modal19 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter19.jpg");
+      }
+      #modal20 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter20.jpg");
+      }
+      #modal21 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter21.jpg");
+      }
+      #modal22 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter22.jpg");
+      }
+      #modal23 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter23.jpg");
+      }
+      #modal24 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter24.jpg");
+      }
+      #modal25 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter25.jpg");
+      }
+      #modal26 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter26.jpg");
+      }
+      #modal27 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter27.jpg");
+      }
+      #modal28 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter28.jpg");
+      }
+      #modal29 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter29.jpg");
+      }
+      #modal30 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter30.jpg");
+      }
+      #modal31 {
+        background: url("https://karpathaza.hu/wp-content/uploads/2020/07/ter31.jpg");
+      }
+      .close {
+      font-size: 30px;
+      color: #366092;
+      text-shadow: none;
+      opacity: 1;
+      float: right;
+      font-weight: 600;
+      line-height: 1;
+      margin-right: 50px;
+      margin-top: 6px;
+    }    
+    .close:hover {
+      color: #1c1c1c;
+      opacity: 1;
+    }     
       </style>
 
 </head>
 
 <body>
 
-<!-- Navigation
-  ================================================== -->
+<!-- Navigation================================================== -->
+<div class="hero-background">
   <div class="container">
-    <div class="header-container header">
-        <a class="navbar-brand logo" href="index.html"> 
-            <img class="logo" src="assets/images/KHS.png" alt="KHS logó"/>
-        </a>
-        <a class="navbar-brand logo" href="http://nski.hu/"> 
-          <img class="logo2" src="assets/icons/logoNSKI.png" alt="NSKI logó"/>
-        </a>
-        <!--<a href="#email-form">
-            <button class="header-btn"> Download FREE!</button>
-        </a>-->
-        <div class="header-right">
-            <a class="navbar-item" href="aktualitasok.html">Aktualitások</a>
-            <a class="navbar-item" href="terkepek.html" style="color: #25F18B;">Térképek</a>
-            <a class="navbar-item" href="adattablak.html">Adattáblák</a>
-            <a class="navbar-item" href="meta-adatbazis.html">Meta-adatbázis</a>
-        </div>
-    </div>
-  </div>
-      <!--navigation-->
 
-  <div class="container" style="padding-bottom: 10%; padding-top: 4%;">
+      <div class="header-container header">
+          <a class="navbar-brand logo" href="index.html" style="margin-left: -1.5%;"> 
+              <span class="logoKHS"></span>
+          </a>
+          <a class="navbar-brand logo" href="http://nski.hu/" style="margin-left: -3%;"> 
+              <span class="logoNSKI"></span>
+          </a>
+          <!--<a href="#email-form">
+              <button class="header-btn"> Download FREE!</button>
+          </a>-->
+          <div class="header-right">
+              <a class="navbar-item" href="aktualitasok.html">Aktualitások</a>
+              <a class="navbar-item" href="terkepek.html" style="color: #6BB963;">Térképek</a>
+              <a class="navbar-item" href="kimutatasok.html">Kimutatások</a>
+              <a class="navbar-item" href="meta-adatbazis.html">Meta-adatbázis</a>
+              <a class="navbar-item" href="gyorsjelentések.html">Gyorsjelentések</a>
+          </div>
+      </div>
+
+      <!--navigation-->
+<div class="hero row">
+  <div class="col-sm-12 col-sm-12">
+      <h1 class="header-headline bold" style="padding: 110px 0px;">TÉRKÉPEK</h1>
+      <div class="header-running-text light">
+        <ul id="ul">
+          <li id="li"><a href="#le">A Kárpát-haza leírása területi adatokkal</a></li>
+          <li id="li"><a href="#int">A Kárpát-haza statisztikák interaktív térképei</a></li>
+          <li id="li"><a href="#terk">A tömbös magyar településterület térképei</a></li>
+          </ul>
+          
+          <p id="le" style="text-align: justify;"></p>
+          <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #274468 !important; margin-top: 50px; margin-bottom: 20px; text-align: left;"><strong>A Kárpát-haza leírása területi adatokkal</strong></p>
+          <p style="text-align: justify; font-size: 16px; font-weight: 400; line-height: 1.9em;">E térképek a Kárpát-haza statisztika adatbázisainak területi adatai közül jelenítenek meg néhányat, csak egy nagyon kis ízelítőt adva ebből az igen kiterjedt adatkörből. A Kárpát-medencei magyarság társadalmi-gazdasági jellemzői leírásának egyik módja, ha a magyarság településterületének adatait jelenítjük meg. Ezek az adatok ott lehetnek kellően reprezentatívak a magyarságra nézve, ahol a magyarság jelentős arányban él, többségben van. Települési/községi szint feletti területi statisztikai adatgyűjtési egységekben csak kivételes esetekben alkot többséget a magyarság. Ezért az itt közölt térképek legtöbbször települési/községi adatokat jelenítenek meg.
+          <br>
+          Ld. bővebben a külhoni magyarság területi adatellátottságáról: a kutatási jelentés elérhető <strong><a href="http://nski.hu/admin/data/file/20200707/karpat-medencei_magyarok_tars-gazd_adatai_tanulm.pdf">itt</a></strong>.
+          <br>
+          Ld. bővebben a külhoni magyarság területi adatellátottságával összefüggésben a magyar településterület területi közigazgatási és önkormányzati szerveződéseiről:  a cikk elérhető <strong><a href="http://www.ksh.hu/docs/hun/xftp/terstat/2020/03/ts600301.pdf">itt</a></strong>.
+          </p>
+          
+          <p id="int" style="text-align: justify;"></p>
+          <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #274468 !important; margin-top: 50px; margin-bottom: 20px; text-align: left;"><strong>A Kárpát-haza statisztikák interaktív térképei</strong></p>
+          <p style="text-align: justify; font-size: 16px; font-weight: 400; line-height: 1.9em;">A térképek adatai igényelhetők az NSKI-tól, további számos itt nem közzétett területi adatkörrel együtt.
+          Az adatok több nemzetrészre és országra kiterjedő térképezése érdekében, az eltérő területi adatgyűjtési szintek miatt a térképek ábrázolási alapegysége országonként különbözik. Az itt közült térképek adatai néhány szempont alapján szűrhetők. A fentebb említett gondolatmenet miatt az egyik fontos szűrfeltétel, hogy a <strong>településeken milyen arányban élnek magyarok</strong>. Ahol magasabb ez az arány, ott feltételezhető, hogy az adott település értéke jól jellemzi a magyarságot is, nem csak a település teljes népességét.</p>
+          
+          <p id="terk" style="text-align: justify;"></p>
+          <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #274468 !important; margin-top: 50px; margin-bottom: 20px; text-align: left;"><strong>A tömbös magyar településterület térképei</strong></p>
+          <p style="text-align: justify; font-size: 16px; font-weight: 400; line-height: 1.9em; margin-bottom: 5%;">A tömbös magyar településterületek is egy szűrési lehetőséget kínálnak az itt közült térképeken. Ezek olyan, általában várost és vonzáskörzetét megjelenítő település-együttesek, amelyeknek a településein a magyarság többségben van. Előfordulnak bennük a magyar többségüket már elvesztett, de még mindig jelentős magyar többségű városi központok vagy vonzáskörzeti falvak is. 
+          <br>
+          Lehatárolásukról ld. bővebben: a kutatási jelentés elérhető <strong><a href="http://nski.hu/admin/data/file/20190816/efop_3_10_1_tars_gazd_osszefoglalo_2019_07_31.pdf">itt</a></strong>.
+          </p>
+      </div>
+
+  <div class="container" style="padding-bottom: 5%; padding-top: 2%;">
+    <!--Gazdaság-->
+    <div class="spacer">
+      <p style="color: #6BB963; font-size: 40px; letter-spacing: 3px; font-family: 'Oswald', sans-serif;">GAZDASÁG</p>
+    </div>
 
     <div class="wp-block-columns alignwide has-3-columns">
       
       <div class="wp-block-column">
-        <p>Magyar nemzetiségűek száma és aránya a Kárpát-medencében</p>
-        <div class="wp-block-image rowMap" style="margin-left: 100px;">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Bruttó hozzáadott érték 2017</p>
+        <div class="wp-block-image rowMap" style="margin-left: 0px;">
           <button class="myBtn" id="modal1"></button>
         </div>
       </div>
-    
+      
       <div class="wp-block-column">
-        <p>Egy általános iskolai tanárra jutó iskolások száma, 2017</p>
-        <div class="wp-block-image rowMap" style="margin-left: 100px;">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Fajlagos GDP 2017</p>
+        <div class="wp-block-image rowMap">
           <button class="myBtn" id="modal2"></button>
         </div>
       </div>
+      
+     <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">1000 főre jutó vállalkozások száma 2016</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal3"></button>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">1000 főre jutó vállalkozások számának változása 2011-2016</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal4"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">100 főre jutó munkanélküliek száma 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal5"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">100 főre jutó munkanélküliek számának változása 2011-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal6"></button>
+        </div>
+      </div>
+      
+    </div>
+   <!--Köznevelés-->
+    <div class="spacer">
+            <p style="color: #6BB963; font-size: 40px; letter-spacing: 3px; margin-top: 60px; font-family: 'Oswald', sans-serif;">KÖZNEVELÉS</p>
+    </div>
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Óvópedagógusra jutó óvodások 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal7"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Óvópedagógusra jutó óvodások számának változása 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal8"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Egy tanárra jutó diákok 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal9"></button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Egy tanárra jutó diákok számának változása 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal10"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Egy középiskolai tanárra középiskolások 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal11"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Egy középiskolai tanárra jutó középiskolások számának változása 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal12"></button>
+        </div>
+      </div>
+      
+    </div>
+
+
+        <!--Demo-->
+    <div class="spacer">
+            <p style="color: #6BB963; font-size: 40px; letter-spacing: 3px; margin-top: 60px; font-family: 'Oswald', sans-serif;">DEMOGRÁFIA</p>
+    </div>
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Állandó népességszám 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal13"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Népességszám változása 2001-2011</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal14"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Népességszám változásának évi átlaga 2011-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal15"></button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Népességszám változásának évi átlaga 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal16"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Élveszületési ráta 2001-2016</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal17"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Vándorlási Egyenleg 2001-2016</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal18"></button>
+        </div>
+      </div>
+      
+    </div>
     
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">0-14 évesek aránya 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal19"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">0-14 évesek arányának változása 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal20"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">15-64 évesek aránya 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal21"></button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">15-64 évesek arányának változása 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal22"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">64 felettiek aránya 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal23"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">64 év felettiek arányának változása 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal24"></button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Fiatalok és munkaképes korúak aránya 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal25"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">A gyermeknépesség eltartottsági rátájának változása 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal26"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Időskorúak és munkaképes korúak aránya 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal27"></button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Az idős népesség eltartottsági rátájának változása 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal28"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Időskorúak és fiatalkorúak aránya 2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal29"></button>
+        </div>
+      </div>
+      
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Az öregedési index változása 2001-2017</p>
+        <div class="wp-block-image rowMap">
+          <button class="myBtn" id="modal30"></button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="wp-block-columns alignwide has-3-columns">
+  
+      <div class="wp-block-column">
+        <p style="height: 36px; font-weight: bold; font-size: 14px;">Magyar nemzetiségűek száma és aránya<br> a Kárpát-medencében</p>
+        <div class="wp-block-image rowMap" style="width: 36%; margin: auto;">
+          <button class="myBtn" id="modal31"></button>
+        </div>
+      </div>
+      
     </div>
   
     <!-- 1 modal -->
     <div class="modal" id="myModal1">
       <span class="close">&times;</span>
-      <div class='tableauPlaceholder' id='viz1593695841345' style='position: relative'><noscript><a href='https:&#47;&#47;karpathaza.hu&#47;karpat-medencei-adatbazis&#47;terkepek&#47;'><img alt='Térkép' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;Magyarsg_arnya&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Magyarsg_arnya&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;Magyarsg_arnya&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='device' value='desktop' /></object></div>                <script>                    var divElement = document.getElementById('viz1593695841345');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else { vizElement.style.width='100%';vizElement.style.height='100%';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <div class="tableauPlaceholder" id="viz1594928268495" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/BH/BHE_terkep/Dashboard1/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="BHE_terkep/Dashboard1"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/BH/BHE_terkep/Dashboard1/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594928268495');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='927px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='927px';} else { vizElement.style.width='100%';vizElement.style.height='1077px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>          </div>
     </div>    
-  
+
     <!-- 2 modal -->
     <div class="modal" id="myModal2">
       <span class="close">&times;</span>
-      <div class='tableauPlaceholder' id='viz1593696123752' style='position: relative'><noscript><a href='https:&#47;&#47;karpathaza.hu&#47;karpat-medencei-adatbazis&#47;terkepek&#47;'><img alt='Térkép' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AL&#47;ALTTAN2017&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ALTTAN2017&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AL&#47;ALTTAN2017&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='device' value='desktop' /></object></div>                <script>                    var divElement = document.getElementById('viz1593696123752');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else { vizElement.style.width='100%';vizElement.style.height='100%';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <div class="tableauPlaceholder" id="viz1594928883697" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/BH/BHE_terkep/Dashboard2/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="BHE_terkep/Dashboard2"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/BH/BHE_terkep/Dashboard2/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop">
+      </object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594928883697');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     </div>  
 
+    <!-- 1 modal -->
+    <div class="modal" id="myModal3">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594928943013" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_VALLAL2016/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALTTAN2017_UJ_15948984121360/_VALLAL2016"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_VALLAL2016/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop">
+      </object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594928943013');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal4">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929004150" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_VALLAL1116/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALTTAN2017_UJ_15948984121360/_VALLAL1116"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_VALLAL1116/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929004150');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal5">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929072617" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_MNKNEP2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALTTAN2017_UJ_15948984121360/_MNKNEP2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_MNKNEP2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929072617');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal6">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929103226" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_MNKNEP1117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALTTAN2017_UJ_15948984121360/_MNKNEP1117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_MNKNEP1117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929103226');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal7">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929525663" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_OVISPD2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_OVISPD2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_OVISPD2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop">
+      </object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929525663');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal8">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929560571" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_OVISPD0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_OVISPD0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_OVISPD0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop">
+      </object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929560571');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal9">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929596033" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_ALTTAN2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALTTAN2017_UJ_15948984121360/_ALTTAN2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_ALTTAN2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929596033');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal10">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929619430" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_ALTTAN0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALTTAN2017_UJ_15948984121360/_ALTTAN0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_ALTTAN0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929619430');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal11">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929644648" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_KOZTAN2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALTTAN2017_UJ_15948984121360/_KOZTAN2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_KOZTAN2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929644648');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>     </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal12">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929671884" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_KOZTAN0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALTTAN2017_UJ_15948984121360/_KOZTAN0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALTTAN2017_UJ_15948984121360/_KOZTAN0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929671884');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal13">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929795956" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_ALLNEP2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_ALLNEP2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_ALLNEP2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929795956');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal14">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929836541" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_ALLNEP0111/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_ALLNEP0111"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_ALLNEP0111/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929836541');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal15">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929853836" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_ALLNEP1117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_ALLNEP1117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_ALLNEP1117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929853836');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal16">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929869948" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_ALLNEP0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_ALLNEP0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_ALLNEP0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929869948');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal17">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929888798" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_SZULET0116/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_SZULET0116"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_SZULET0116/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929888798');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal18">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929906148" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_VANDOR0116/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_VANDOR0116"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_VANDOR0116/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929906148');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal19">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929955865" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_0014EV2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_0014EV2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_0014EV2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929955865');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal20">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929972507" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_0014EV0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_0014EV0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_0014EV0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929972507');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal21">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594929994571" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_1564EV2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_1564EV2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_1564EV2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594929994571');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal22">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930010151" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_1564EV0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ALLNEP2017_15948947895760/_1564EV0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AL/ALLNEP2017_15948947895760/_1564EV0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930010151');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal23">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930028956" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_64XXEV2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_64XXEV2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_64XXEV2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930028956');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal24">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930050265" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_64XXEV0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_64XXEV0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_64XXEV0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930050265');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>     </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal25">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930111612" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_014ELT2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_014ELT2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_014ELT2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930111612');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal26">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930131433" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_014ELT0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_014ELT0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_014ELT0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930131433');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal27">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930148686" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_65XELT2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_65XELT2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_65XELT2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930148686');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal28">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930168667" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_65XELT0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_65XELT0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_65XELT0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930168667');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal29">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930183939" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_OREGIX2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_OREGIX2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_OREGIX2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930183939');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
+    <!-- 2 modal -->
+    <div class="modal" id="myModal30">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930201443" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_OREGIX0117/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_OREGIX0117"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_OREGIX0117/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930201443');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>  
+
+    <!-- 1 modal -->
+    <div class="modal" id="myModal31">
+      <span class="close">&times;</span>
+      <div class="tableauPlaceholder" id="viz1594930223522" style="position: relative"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/Ma/Magyarsgarnya/Dashboard2/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="Magyarsgarnya/Dashboard2"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Ma/Magyarsgarnya/Dashboard2/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930223522');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='927px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='927px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>    
+
   </div>
+</div>
+</div>
   
 <!-- Footer
   ================================================== -->
@@ -245,16 +1134,16 @@
                     <!--Footer Column-->
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="contact-widget">
-                            <a class="navbar-brand logo" href="index.html"> 
-                              <img class="logo" style="padding-top: 12px; max-width: 100px;" src="assets/images/KHS2.png" alt="KHS logó"/>
+                            <a class="navbar-brand logo" style="margin-top: 1%; margin-left: -2%;" href="index.html"> 
+                                <span class="logoKHSfooter"></span>
                             </a>
                             <div class="widget-content">
-                                <h4 class="header-headline" style="font-size: 16px; padding-top: 60px; padding-left: 4px; color: #282828;">Kárpát-haza statisztikák</h4>
+                                <h4 style="font-size: 16px; padding-top: 66px; color: #1c1c1c;"></h4>
                             </div>
                             <div class="widget-content">
-                              <a class="navbar-brand logo" href="http://nski.hu/"> 
-                                  <img class="logo3" src="assets/icons/logoNSKIfooter.png" alt="NSKI logó"/>
-                              </a>
+                                <a class="navbar-brand logo" href="http://nski.hu/"> 
+                                    <img class="logo3" src="assets/icons/logoNSKIfooter.png" alt="NSKI logó"/>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -265,26 +1154,26 @@
                         <div class="posts-widget">
                             <h2>Információk</h2>
                             <div class="widget-content">
-                                 <ul class="rules-links" style="padding-left: 0; font-size: 16px;">
+                                <ul class="rules-links" style="padding-left: 0; font-size: 16px;">
                                     <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="adatkezeles-rendje.html" class="footer-link">Adatkezelés rendje</a></li>                                   
                                     <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="impresszum.html" class="footer-link">Impresszum</a></li>
-                                 </ul> 
+                                </ul> 
                             </div> 
                         </div>	                                 	
-                     </div><!--End Footer Column-->
+                    </div><!--End Footer Column-->
                     
                     <!--Footer Column-->
                     <div class="col-md-4 col-sm-4 col-xs-12" style="text-align: right;">
                         <h2 class="ftco-heading-2">Linkek</h2>
                         <ul class="list-unstyled">
-                          <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="aktualitasok.html" class="footer-link">Aktualitások</a></li>
-                          <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="terkepek.html" class="footer-link">Térképek</a></li>
-                          <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="adattablak.html" class="footer-link">Adattáblák</a></li>
-                          <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="meta-adatbazis.html" class="footer-link">Meta-adatbázis</a></li>
+                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="aktualitasok.html" class="footer-link">Aktualitások</a></li>
+                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="terkepek.html" class="footer-link">Térképek</a></li>
+                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="kimutatasok.html" class="footer-link">Kimutatások</a></li>
+                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="meta-adatbazis.html" class="footer-link">Meta-adatbázis</a></li>
                         </ul>
                     </div>
                     <!--End Footer Column-->
-                                              
+                                            
                 </div>
             </div>
             <!--End Big Column-->
@@ -293,10 +1182,10 @@
     </div>
     <!--container-->
     <div class="footer-bottom">
-      <div class="auto-container">
-          <div class="copyright-text">© 2020. NSKI</div>
-      </div>
-  </div>
+        <div class="auto-container">
+            <div class="copyright-text">© 2020. NSKI</div>
+        </div>
+    </div>
 </div>
 <!--footer-->
 
@@ -321,6 +1210,117 @@
         modal[1].style.display = "block";
     }
 
+    btn[2].onclick = function() {
+      modal[2].style.display = "block";
+  }
+
+    btn[3].onclick = function() {
+        modal[3].style.display = "block";
+    }
+
+    btn[4].onclick = function() {
+        modal[4].style.display = "block";
+    }
+
+    btn[5].onclick = function() {
+        modal[5].style.display = "block";
+    }
+
+    btn[6].onclick = function() {
+        modal[6].style.display = "block";
+    }
+
+    btn[7].onclick = function() {
+        modal[7].style.display = "block";
+    }
+    btn[8].onclick = function() {
+        modal[8].style.display = "block";
+    }
+    
+    btn[9].onclick = function() {
+        modal[9].style.display = "block";
+    }
+
+    btn[10].onclick = function() {
+      modal[10].style.display = "block";
+  }
+
+    btn[11].onclick = function() {
+        modal[11].style.display = "block";
+    }
+
+    btn[12].onclick = function() {
+        modal[12].style.display = "block";
+    }
+
+    btn[13].onclick = function() {
+        modal[13].style.display = "block";
+    }
+
+    btn[14].onclick = function() {
+        modal[14].style.display = "block";
+    }
+
+    btn[15].onclick = function() {
+        modal[15].style.display = "block";
+    }
+    btn[16].onclick = function() {
+      modal[16].style.display = "block";
+  }
+
+    btn[17].onclick = function() {
+        modal[17].style.display = "block";
+    }
+
+    btn[18].onclick = function() {
+        modal[18].style.display = "block";
+    }
+
+    btn[19].onclick = function() {
+        modal[19].style.display = "block";
+    }
+
+    btn[20].onclick = function() {
+        modal[20].style.display = "block";
+    }
+
+    btn[21].onclick = function() {
+        modal[21].style.display = "block";
+    }
+    btn[22].onclick = function() {
+        modal[22].style.display = "block";
+    }
+
+    btn[23].onclick = function() {
+        modal[23].style.display = "block";
+    }
+
+    btn[24].onclick = function() {
+        modal[24].style.display = "block";
+    }
+
+    btn[25].onclick = function() {
+        modal[25].style.display = "block";
+    }
+    btn[26].onclick = function() {
+      modal[26].style.display = "block";
+  }
+
+    btn[27].onclick = function() {
+        modal[27].style.display = "block";
+    }
+
+    btn[28].onclick = function() {
+        modal[28].style.display = "block";
+    }
+
+    btn[29].onclick = function() {
+        modal[29].style.display = "block";
+    }
+    btn[30].onclick = function() {
+        modal[30].style.display = "block";
+    }
+    
     // When the user clicks on <span> (x), close the modal
     span[0].onclick = function() {
         modal[0].style.display = "none";
@@ -328,6 +1328,117 @@
     
     span[1].onclick = function() {
         modal[1].style.display = "none";
+    }
+
+    span[2].onclick = function() {
+      modal[2].style.display = "none";
+  }
+
+    span[3].onclick = function() {
+        modal[3].style.display = "none";
+    }
+
+    span[4].onclick = function() {
+        modal[4].style.display = "none";
+    }
+
+    span[5].onclick = function() {
+        modal[5].style.display = "none";
+    }
+
+    span[6].onclick = function() {
+        modal[6].style.display = "none";
+    }
+
+    span[7].onclick = function() {
+        modal[7].style.display = "none";
+    }
+    span[8].onclick = function() {
+        modal[8].style.display = "none";
+    }
+    
+    span[9].onclick = function() {
+        modal[9].style.display = "none";
+    }
+
+    span[10].onclick = function() {
+      modal[10].style.display = "none";
+  }
+
+    span[11].onclick = function() {
+        modal[11].style.display = "none";
+    }
+
+    span[12].onclick = function() {
+        modal[12].style.display = "none";
+    }
+
+    span[13].onclick = function() {
+        modal[13].style.display = "none";
+    }
+
+    span[14].onclick = function() {
+        modal[14].style.display = "none";
+    }
+
+    span[15].onclick = function() {
+        modal[15].style.display = "none";
+    }
+    span[16].onclick = function() {
+      modal[16].style.display = "none";
+  }
+
+  span[17].onclick = function() {
+        modal[17].style.display = "none";
+    }
+
+    span[18].onclick = function() {
+        modal[18].style.display = "none";
+    }
+
+    span[19].onclick = function() {
+        modal[19].style.display = "none";
+    }
+
+    span[20].onclick = function() {
+        modal[20].style.display = "none";
+    }
+
+    span[21].onclick = function() {
+        modal[21].style.display = "none";
+    }
+    span[22].onclick = function() {
+        modal[22].style.display = "none";
+    }
+
+    span[23].onclick = function() {
+        modal[23].style.display = "none";
+    }
+
+    span[24].onclick = function() {
+        modal[24].style.display = "none";
+    }
+
+    span[25].onclick = function() {
+        modal[25].style.display = "none";
+    }
+    span[26].onclick = function() {
+      modal[26].style.display = "none";
+  }
+
+  span[27].onclick = function() {
+        modal[27].style.display = "none";
+    }
+
+    span[28].onclick = function() {
+        modal[28].style.display = "none";
+    }
+
+    span[29].onclick = function() {
+        modal[29].style.display = "none";
+    }
+    span[30].onclick = function() {
+        modal[30].style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it

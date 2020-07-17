@@ -1,10 +1,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-image: linear-gradient( 109.6deg,  rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1% );
+   /* background-image: linear-gradient( 109.6deg,  rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1% );*/
     /*background: -webkit-linear-gradient(117deg,  rgb(96, 0, 206), rgb(10, 50, 226), rgb(16, 212, 121));
     background: linear-gradient(117deg, rgb(96, 0, 206), rgb(10, 50, 226), rgb(16, 212, 121));
     background: -webkit-radial-gradient(rgb(96, 0, 206), rgb(10, 50, 226), rgb(16, 212, 121));
     background: radial-gradient(rgb(96, 0, 206), rgb(10, 50, 226), rgb(16, 212, 121));*/
+    background-color: white;
 }
 
 h1, h2, h3, h4, p {
@@ -20,12 +21,15 @@ a {
     -o-transition: .3s all ease;
     transition: .3s all ease;
     text-decoration: none;
+    color: #1c1c1c;
 }
 
 a:focus, a:hover {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
+    text-decoration: none;
+    color: rgb(54,96,146);
     text-decoration: none;
 }
 
@@ -34,20 +38,20 @@ a:focus, a:hover {
 }
 
 .navbar-item {
-    color: #9adcc7;
-    padding: 20px;
+    color: #1c1c1c;
+    padding: 20px 0 20px 32px;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .navbar-item:hover {
-    color: #10D479;
+    color: rgb(54,96,146);
     text-decoration: none;
 }
 
 a.navbar-item:focus {
-    color: #9adcc7;
+    color: #1c1c1c;
     text-decoration: none;
 }
 
@@ -62,20 +66,21 @@ a.navbar-item:focus {
     */
     --size: 85%;
     min-height: 100vh;    
-    background:
+    /*background:
       radial-gradient(circle at calc(50% + var(--mouseX)) calc(100% + var(--mouseY)), rgb(16, 212, 121) 0%, rgba(255,0,0,0) var(--size)),
       radial-gradient(circle at calc(0% + var(--mouseX)) calc(0% + var(--mouseY)), rgb(96, 0, 206) 0%, rgba(0,255,0,0) var(--size)),
-      radial-gradient(circle at calc(100% + var(--mouseX)) calc(0% + var(--mouseY)), rgb(10, 50, 226) 0%, rgba(0,0,255,0) var(--size));
+      radial-gradient(circle at calc(100% + var(--mouseX)) calc(0% + var(--mouseY)), rgb(10, 50, 226) 0%, rgba(0,0,255,0) var(--size));*/
+    background-color: white;  
 }
 
 .link {
-    color: #9adcc7; 
+    color: #1c1c1c; 
     font-weight: bold;
     text-decoration: none;
 }
 
 .link:hover {
-    color: #10D479; 
+    color: rgb(54,96,146); 
     font-weight: bold;
     text-decoration: none;
 }
@@ -89,7 +94,7 @@ a.navbar-item:focus {
 }
 
 .header {
-    padding-top: 35px;
+    padding-top: 40px;
     width: 100%;
     height: 100px;
     position: relative;
@@ -97,21 +102,89 @@ a.navbar-item:focus {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 32px;
     padding-left: 0;
     padding-top: 0px;
 }
 
 .logo2 {
-    max-width: 300px;
-    margin-left: 126px;
-    margin-top: -14px;
+    max-width: 230px;
+    margin-left: 310px;
+    margin-top: -6px;
 }
 
 .logo3 {
-    max-width: 250px;
-    margin-left: 5px;
-    margin-top: 99px;
+    width: 225px;
+    height: 144%;
+    margin-top: 96px;
+}
+
+span.logoKHS {
+    background: url(/assets/images/logoKHS.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 159px;
+    height: 90px;
+    background-size: 100%;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    margin-top: -145%;
+}
+
+span.logoKHS:hover {
+    background: url(/assets/images/logoKHS.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 159px;
+    height: 90px;
+    background-size: 100%;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    margin-top: -120%;
+}
+
+span.logoKHSfooter {
+    background: url(/assets/images/logoKHS.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 159px;
+    height: 90px;
+    background-size: 100%;
+}
+
+span.logoNSKI {
+    background: url(/assets/icons/logoNSKIfooter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 225px;
+    height: 144%;
+    margin-left: 292px;
+    margin-top: -7px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+span.logoNSKI:hover {
+    background: url(/assets/icons/logoNSKIfooter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 225px;
+    height: 144%;
+    margin-left: 292px;
+    margin-top: -3px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
 }
 
 .header-btn {
@@ -142,6 +215,30 @@ a.navbar-item:focus {
     padding-bottom: 60px;
 }
 
+.hero.row {
+    padding-bottom: 0;
+    margin-bottom: 5%;
+}
+
+/*.hero.row:before {
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.50);
+
+    background-image:url(https://i1.wp.com/karpathaza.hu/wp-content/uploads/2020/02/tatra.jpg?fit=1600%2C844&amp;ssl=1);
+    background-position-y: -288px;
+    padding: 110px 0px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+}*/
+
 .mouse {
     position: absolute;
     left: 0;
@@ -164,7 +261,7 @@ a.navbar-item:focus {
 }
 
 .hero-right {
-    color: #fff;
+    color: #1c1c1c;
     text-align: center;
 }
 
@@ -198,17 +295,33 @@ a.navbar-item:focus {
 }
 
 .header-headline {
-    padding-top: 0;
     padding-bottom: 15px;
-    text-align: center;
-    color: #fff;
+    text-align: center !important;
+    font-size: 56px;
+    color: #1c1c1c;
+    background-image:url(https://i1.wp.com/karpathaza.hu/wp-content/uploads/2020/02/tatra.jpg?fit=1600%2C844&amp;ssl=1);
+    background-position-y: -288px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 119%;
+    margin-left: -10%;
 }
+
+    @media screen and (min-width: 1900px) {
+        .header-headline {
+            width: 167%;
+            margin-left: -34%;
+        }
+    }
 
 .header-running-text {
     text-align: justify;
     line-height: 1.5;
-    margin: auto;
-    color: #fff;
+    margin-top: 5% !important;
+    color: #1c1c1c;
+    padding-right: 0 !important;
 }
 
 .aktualitasTxt {
@@ -216,7 +329,7 @@ a.navbar-item:focus {
     margin: 0;
     text-align: center;
     padding: 60px 30px 30px 40px;
-    color: #fff;
+    color: #1c1c1c;
     font-weight: 400;
     font-size: 20px;
 }
@@ -232,11 +345,12 @@ a.navbar-item:focus {
 }
 
 .features-section {
-    background-color: black;
+    background-color: #1c1c1c;
     padding-top: 8%;
     padding-bottom: 80px;
     text-align: center;
-    padding-bottom: 13%;
+    padding-bottom: 8%;
+    margin-bottom: 5%;
     position: relative;
 }
 
@@ -290,12 +404,10 @@ a.navbar-item:focus {
     justify-content: center;
     align-items: center;
     margin: auto;
-    box-shadow: 4px 14px 28px #393939;
 }
 
 .feature-icon:hover {
-    background-color: #0A32E2;
-    box-shadow: 4px 14px 28px #0a32e273;
+    background-color: rgb(54,96,146);
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
@@ -556,24 +668,24 @@ ul {
 }
 
 .footer {
-    background-color: #fff;
+    background-color: #d6d6d6;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .footer-link {
-    color: #282828;
+    color: #1c1c1c;
     font-size: 16px;
     font-weight: 600;
 }
 
 .footer-link:hover {
-    color: #10D479;
+    color: rgb(54,96,146);
 }
 
 .footer .footer-bottom {
     position: relative;
-    color: #282828;
+    color: #1c1c1c;
     line-height: 24px;
     text-align: center;
 }
