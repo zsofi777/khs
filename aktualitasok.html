@@ -22,347 +22,192 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
   <style>
-    .wp-block-columns {
-      display: flex;
-      margin: 20px 0;
-    }    
-    .wp-block-column {
-      flex: 1;
-      margin: 0 20px;
-    }        
-    @media (max-width: 1100px) {
-      .wp-block-columns.has-3-columns {
-        flex-flow: row wrap;
-      }
-    }        
-    @media (max-width: 700px) {
-      .wp-block-columns.has-3-columns {
-        display: block;
-      }    
-      .wp-block-column {
-        margin: 20px 0;
-      }
-    }          
-    h1 {
-      text-align: center;
-    }    
+    .header-headline {
+      padding-bottom: 15px;
+      text-align: center !important;
+      font-size: 56px;
+      color: #fff;
+      background-image:url(assets/images/aktualitasok.png);
+      background-position-y: -288px;
+      position: relative;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  
+    body {
+        font-family: 'Open-sans', sans-serif;
+        color: #1C1C1C;
+    }
+
+    .page-title h1 {
+        text-align: center;
+    }
     p {
-      text-align: center;
-      margin: 36px 0px 10px 0px;
-      color: #1c1c1c;
-    }      
-    .wp-block-image {
-      -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3);
-      -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3);
-      box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3);
-    }   
-    .modal {
-      left: 13%;
-    }    
-    @media (min-width: 1700px) {
-      .modal {
-        left: 24%;
-      }
-    }    
-    iframe {
-      height: 100%;
-    }    
-    .myBtn {
-      border-radius: 0px;
-    }    
-    .myBtn#modal1 {
-      width: 100%;
-      height: 265px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: none;
-    }    
-    .myBtn#modal1:hover {
-      border: solid 4px #366092;
-    }    
-    .myBtn#modal2 {
-      width: 100%;
-      height: 265px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: none;
-    }    
-    .myBtn#modal2:hover {
-      border: solid 4px #366092;
-    }    
-    .myBtn#modal3 {
-      width: 100%;
-      height: 265px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: none;
-    }    
-    .myBtn#modal3:hover {
-      border: solid 4px #366092;
-    }    
-    .myBtn#modal4 {
-      width: 100%;
-      height: 265px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: none;
-    }    
-    .myBtn#modal4:hover {
-      border: solid 4px #366092;
-    }    
-    .myBtn#modal5 {
-      width: 100%;
-      height: 265px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: none;
-    }    
-    .myBtn#modal5:hover {
-      border: solid 4px #366092;
-    }    
-    .myBtn#modal6 {
-      width: 100%;
-      height: 265px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: none;
-    }     
-    .myBtn#modal6:hover {
-      border: solid 4px #366092;
-    }    
-    .rowMap {
-        width: 332px;
-        height: 265px;
-    }      
-    @media screen and (max-width: 700px) {
-      .myBtn#modal1, 
-      .myBtn#modal2, 
-      .myBtn#modal3, 
-      .myBtn#modal4, 
-      .myBtn#modal5, 
-      .myBtn#modal6 {
-        width: 100%;
-        height: 226px;
-      }
-      .rowMap {
-        width: 100%;
-        height: 226px;
-      }
-    }    
-    @media screen and (min-width: 701px) and (max-width: 800px) {
-      .myBtn#modal1, 
-      .myBtn#modal2, 
-      .myBtn#modal3, 
-      .myBtn#modal4, 
-      .myBtn#modal5, 
-      .myBtn#modal6 {
-        width: 100%;
-        height: 155px;
-      }
-      .rowMap {
-        width: 100%;
-        height: 155px;
-      }
-      p {
-        font-size: 14px;
-      }
-    }    
-    @media screen and (max-width: 1100px) and (min-width: 801px) {
-      .myBtn#modal1, 
-      .myBtn#modal2, 
-      .myBtn#modal3, 
-      .myBtn#modal4, 
-      .myBtn#modal5, 
-      .myBtn#modal6 {
-        width: 100%;
-        height: 222px;
-      }
-      .rowMap {
-        width: 100%;
-        height: 222px;
-      }
-      p {
-        font-size: 19px;
-      }
-    }      
-    #modal1 {
-      background: url("https://karpathaza.hu/wp-content/uploads/2020/04/jarvany1.png");
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.3em;
     }
-    #modal2 {
-      background: url("https://karpathaza.hu/wp-content/uploads/2020/04/jarvany2.png");
+    .menu {
+        display: flex;
+        margin-bottom: 6%;
+        margin-top: 3%;
+        margin-left: -3%;
+        width: 110%;
     }
-    #modal3 {
-      background: url("https://karpathaza.hu/wp-content/uploads/2020/04/jarvany3.png");
+    .menu a {
+        margin: 10px;
+        text-decoration: none;
+        color: #1C1C1C;
     }
-    #modal4 {
-      background: url("https://karpathaza.hu/wp-content/uploads/2020/04/jarvany4.png");
+    .menu a:focus, .menu a:hover p {
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        text-decoration: none;
+        color: rgb(54,96,146);
+        text-decoration: none;
     }
-    #modal5 {
-      background: url("https://karpathaza.hu/wp-content/uploads/2020/04/jarvany5.png");
+    .bg {
+        width: 144px;
+        height: 115px;
+        margin: auto;
+        -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3);
+        box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3);
     }
-    #modal6 {
-      background: url("https://karpathaza.hu/wp-content/uploads/2020/04/jarvany6.png");
-    }    
-    .close {
-      font-size: 30px;
-      color: #366092;
-      text-shadow: none;
-      opacity: 1;
-      float: right;
-      font-weight: 600;
-      line-height: 1;
-      margin-right: 50px;
-      margin-top: 6px;
-    }    
-    .close:hover {
-      color: #1c1c1c;
-      opacity: 1;
-    }     
+    .bg:hover {
+        -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+        box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    }
+    .bg1 {
+    background: url(https://karpathaza.hu/wp-content/uploads/2020/04/jarvany1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .bg2 {
+        background: url(https://karpathaza.hu/wp-content/uploads/2020/04/jarvany2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg3 {
+        background: url(https://karpathaza.hu/wp-content/uploads/2020/04/jarvany3.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg4 {
+        background: url(https://karpathaza.hu/wp-content/uploads/2020/04/jarvany6.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg5 {
+        background: url(https://karpathaza.hu/wp-content/uploads/2020/04/jarvany4.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg6 {
+        background: url(https://karpathaza.hu/wp-content/uploads/2020/04/jarvany5.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
   </style>
+
 </head>
 
 <body>
-  
-<!-- Navigation================================================== -->
-<div class="hero-background">
-  <div class="container">
 
-    <div class="header-container header">
-      <a class="navbar-brand logo" href="index.html"> 
-          <span class="logoKHS"></span>
-      </a>
-      <a class="navbar-brand logo" href="http://nski.hu/" style="margin-left: -3%;"> 
-          <span class="logoNSKI"></span>
-      </a>
-      <!--<a href="#email-form">
-          <button class="header-btn"> Download FREE!</button>
-      </a>-->
-      <div class="header-right">
-          <a class="navbar-item" href="aktualitasok.html" style="color: #6BB963;">Aktualitások</a>
-          <a class="navbar-item" href="terkepek.html">Térképek</a>
-          <a class="navbar-item" href="kimutatasok.html">Kimutatások</a>
-          <a class="navbar-item" href="meta-adatbazis.html">Meta-adatbázis</a>
-          <a class="navbar-item" href="gyorsjelentések.html">Gyorsjelentések</a>
-      </div>
-    </div>
+    <!-- Navigation================================================== -->
+    <div class="hero-background">
+    <div class="container">
 
-      <!--navigation-->
-      <div class="hero row">
-        <div class="col-sm-12 col-sm-12">
-            
-          <h1 class="header-headline bold" style="padding: 132px 0px;">AKTUALITÁSOK</h1>
-            <div class="header-running-text light">
-              <p style="line-height: 1.9em; font-size: 16px; text-align: justify; margin-bottom: 40px;"><strong style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important;">A Kárpát-medencei magyar nemzetrészek sérülékenysége a járványhelyzettel és gazdasági válsággal szemben</strong></p>
-              <p style="line-height: 1.9em; font-size: 16px; text-align: justify;">A Nemzetstratégiai Kutatóintézet megvizsgálta a járványhelyzettel és annak kedvezőtlen gazdasági hatásaival kapcsolatos sérülékenységet Magyarországon és a külhoni magyar nemzetrészekben. Az alábbi térképek néhány ebből a szempontból fontos tematikának a területi eloszlását mutatják be e térségekben.</p>
-              <p style="line-height: 1.9em; font-size: 16px; text-align: justify;">A teljes jelentés további témák elemzésével <strong><a href="http://nski.hu/mennyire-vagyunk-serulekenyek-a-karpat-medenceben-a-koronavirussal-szemben-kutatasi-gyorsjelentes.html">itt érhető el</a></strong>.</p>
-              <p style="line-height: 1.9em; font-size: 16px; text-align: justify;">Az NSKI további járványhelyzeti kutatásairól, azok eredményeiről és a járványhelyzettel kapcsolatos további információkról és hírekről <strong><a href="http://nski.hu/egyetlen-magyar-sincs-egyedul.html">itt olvashat</a></strong>.</p>
+        <div class="header-container header">
+            <a class="navbar-brand logo" href="index.html"> 
+                <span class="logoKHS"></span>
+            </a>
+            <a class="navbar-brand logo" href="http://nski.hu/" style="margin-left: -3%;"> 
+                <span class="logoNSKI"></span>
+            </a>
+            <!--<a href="#email-form">
+                <button class="header-btn"> Download FREE!</button>
+            </a>-->
+            <div class="header-right">
+                <a class="navbar-item" href="aktualitasok.html" style="color: #6BB963;">Aktualitások</a>
+                <a class="navbar-item" href="terkepek.html">Térképek</a>
+                <a class="navbar-item" href="kimutatasok.html">Kimutatások</a>
+                <a class="navbar-item" href="meta-adatbazis.html">Meta-adatbázis</a>
+                <a class="navbar-item" href="gyorsjelentesek.html">Gyorsjelentések</a>
             </div>
-
-          <div class="container" style="padding-bottom: 5%; padding-top: 2%;">
-            
-            <div class="wp-block-columns alignwide has-3-columns">
-              
-              <div class="wp-block-column">
-                <p style="font-weight: bold; font-size: 14px;">Idős népesség aránya</p>
-                <div class="wp-block-image rowMap" style="margin-left: 0px;">
-                  <button class="myBtn" id="modal1"></button>
-                </div>
-              </div>
-            
-              <div class="wp-block-column">
-                <p style="font-weight: bold; font-size: 14px;">Idős népesség száma</p>
-                <div class="wp-block-image rowMap" style="margin-left: 0px;">
-                  <button class="myBtn" id="modal2"></button>
-                </div>
-              </div>
-              
-              <div class="wp-block-column">
-                <p style="font-weight: bold; font-size: 14px;">Legalább 65 éves népesség</p>
-                <div class="wp-block-image rowMap" style="margin-left: 0px;">
-                  <button class="myBtn" id="modal3"></button>
-                </div>
-              </div>
-        
-            </div>
-        
-            <div class="wp-block-columns alignwide has-3-columns">
-        
-              <div class="wp-block-column">
-                <p style="font-weight: bold; font-size: 14px;">Kórházi ágyak száma</p>
-                <div class="wp-block-image rowMap" style="margin-left: 0px;">
-                  <button class="myBtn" id="modal4"></button>
-                </div>
-              </div>
-              
-              <div class="wp-block-column">
-                <p style="font-weight: bold; font-size: 14px;">Idegenforgalom aránya</p>
-                <div class="wp-block-image rowMap" style="margin-left: 0px;">
-                  <button class="myBtn" id="modal5"></button>
-                </div>
-              </div>
-              
-              <div class="wp-block-column">
-                <p style="font-weight: bold; font-size: 14px;">Egy háziorvosra jutó népesség</p>
-                <div class="wp-block-image rowMap" style="margin-left: 0px;">
-                  <button class="myBtn" id="modal6"></button>
-                </div>
-              </div>
-            
-            </div>  
-          
-            <!-- 1 modal -->
-            <div class="modal" id="myModal1">
-              <span class="close">&times;</span>
-              <div class="tableauPlaceholder" id="viz1588266111408" style="position: relative"><noscript><a href="#"><img alt="Térkép" src="https://public.tableau.com/static/images/Ma/MagyNemzIdos_arany/Dashboard1/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="MagyNemzIdos_arany/Dashboard1"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Ma/MagyNemzIdos_arany/Dashboard1/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="device" value="desktop"></object></div><script>                    var divElement = document.getElementById('viz1588266111408');
-              var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else { vizElement.style.width='100%';vizElement.style.height='100%';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>
-          
-            <!-- 2 modal -->
-            <div class="modal" id="myModal2">
-              <span class="close">&times;</span>
-              <div class='tableauPlaceholder' id='viz1593639047678' style='position: relative'><noscript><a href='#'><img alt='Térkép' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MagyNemzIdos_arany&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MagyNemzIdos_arany&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MagyNemzIdos_arany&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='device' value='desktop' /></object></div>                <script>                    var divElement = document.getElementById('viz1593639047678');                    
-              var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else { vizElement.style.width='100%';vizElement.style.height='100%';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>
-          
-            <!-- 3 modal -->
-            <div class="modal" id="myModal3">
-              <span class="close">&times;</span>
-              <div class='tableauPlaceholder' id='viz1593693958700' style='position: relative'><noscript><a href='#'><img alt='Térkép' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Le&#47;Legalabb65&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Legalabb65&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Le&#47;Legalabb65&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='device' value='desktop' /></object></div>                <script>                    var divElement = document.getElementById('viz1593693958700');                    
-              var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else { vizElement.style.width='100%';vizElement.style.height='100%';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>
-          
-            <!-- 4 modal -->
-            <div class="modal" id="myModal4">
-              <span class="close">&times;</span>
-              <div class='tableauPlaceholder' id='viz1593639110976' style='position: relative'><noscript><a href='#'><img alt='Térkép' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ko&#47;Korhazi_agy&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Korhazi_agy&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ko&#47;Korhazi_agy&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='device' value='desktop' /></object></div>                <script>                    var divElement = document.getElementById('viz1593639110976');                    
-              var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else { vizElement.style.width='100%';vizElement.style.height='100%';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>
-          
-            <!-- 5 modal -->
-            <div class="modal" id="myModal5">
-              <span class="close">&times;</span>
-              <div class='tableauPlaceholder' id='viz1593639131903' style='position: relative'><noscript><a href='#'><img alt='Térkép' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Id&#47;Idegenf&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Idegenf&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Id&#47;Idegenf&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='device' value='desktop' /></object></div>                <script>                    var divElement = document.getElementById('viz1593639131903');                    
-              var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else { vizElement.style.width='100%';vizElement.style.height='100%';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    
-            </div>
-          
-            <!-- 6 modal -->
-            <div class="modal" id="myModal6">
-              <span class="close">&times;</span>
-              <div class='tableauPlaceholder' id='viz1593639155770' style='position: relative'><noscript><a href='#'><img alt='Térkép' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Id&#47;Idegenf&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Idegenf&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Id&#47;Idegenf&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='device' value='desktop' /></object></div>                <script>                    var divElement = document.getElementById('viz1593639155770');                    
-              var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='100%';} else { vizElement.style.width='100%';vizElement.style.height='100%';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>
-
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-<!-- Footer
-  ================================================== -->
 
-  <div class="footer">
+        <!--navigation-->
+        <div class="hero row">
+
+            <div class="col-sm-12 col-sm-12">
+            <h1 class="header-headline bold" style="padding: 132px 0px;">AKTUALITÁSOK</h1>
+
+            <div class="header-running-text light">
+
+                <div class="menu">        
+                    <a href="#map1" style="width: 170px;"><p style="font-size: 11px; font-weight: 600;">Magyar nemzetiségű idős népesség (65+) aránya</p><div class="bg bg1"></div></a>
+                    <a href="#map2" style="width: 170px;"><p style="font-size: 11px; font-weight: 600;">Magyar nemzetiségű idős népesség (65+) száma</p><div class="bg bg2"></div></a>
+                    <a href="#map3" style="width: 191px;"><p style="font-size: 11px; font-weight: 600;">A legalább 65 éves népesség aránya a magyarországi átlaghoz képest</p><div class="bg bg3"></div></a>
+                    <a href="#map4" style="width: 170px;"><p style="font-size: 11px; font-weight: 600;">Egy házirovosra jutó népesség (2016)</p><div class="bg bg4"></div></a>
+                    <a href="#map5" style="width: 170px;"><p style="font-size: 11px; font-weight: 600;">Kórházi ágyak száma 10 ezer főre a Kárpát-medencében, 2016</p><div class="bg bg5"></div></a>
+                    <a href="#map6" style="width: 192px;"><p style="font-size: 11px; font-weight: 600;">Kárpát-medencei térségek turisztikai teljesítménye országonként</p><div class="bg bg6"></div></a>
+                </div>
+                
+                <p style="line-height: 1.9em; font-size: 16px; text-align: justify; margin-bottom: 10px;"><strong style="font-size: 20px; color: #365f92 !important; font-family: 'Oswald', sans-serif;">A Kárpát-medencei magyar nemzetrészek sérülékenysége a járványhelyzettel és gazdasági válsággal szemben</strong></p>
+                <p style="line-height: 1.9em; font-size: 16px; text-align: justify;">A Nemzetstratégiai Kutatóintézet megvizsgálta a járványhelyzettel és annak kedvezőtlen gazdasági hatásaival kapcsolatos sérülékenységet Magyarországon és a külhoni magyar nemzetrészekben. Az alábbi térképek néhány ebből a szempontból fontos tematikának a területi eloszlását mutatják be e térségekben.</p>
+                <p style="line-height: 1.9em; font-size: 16px; text-align: justify;">A teljes jelentés további témák elemzésével <strong><a href="http://nski.hu/mennyire-vagyunk-serulekenyek-a-karpat-medenceben-a-koronavirussal-szemben-kutatasi-gyorsjelentes.html">itt érhető el</a></strong>.</p>
+                <p style="line-height: 1.9em; font-size: 16px; text-align: justify;">Az NSKI további járványhelyzeti kutatásairól, azok eredményeiről és a járványhelyzettel kapcsolatos további információkról és hírekről <strong><a href="http://nski.hu/egyetlen-magyar-sincs-egyedul.html">itt olvashat</a></strong>.</p>
+                    
+                <div style="height:20px" aria-hidden="true" class="wp-block-spacer" id="map1"></div>        
+
+            </div>
+
+            <div class="container" style="margin-top: 4%; margin-left: -0.5%; padding: 0px;">
+            
+                <!-- 1 -->
+                <div class='tableauPlaceholder' id='viz1595620835906' style="position: relative; -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); margin: auto;"><noscript><a href='#'><img alt='Idős népesség aránya' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MagyNemzIdos_arany_15952528048810&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MagyNemzIdos_arany_15952528048810&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MagyNemzIdos_arany_15952528048810&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1595620835906');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div style="height:50px" aria-hidden="true" class="wp-block-spacer" id="map2"></div>
+            
+                <!-- 2 -->
+                <div class='tableauPlaceholder' id='viz1595621709208' style="position: relative; -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); margin: auto;"><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MagyNemzIdos_arany_15952528048810&#47;Dashboard4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MagyNemzIdos_arany_15952528048810&#47;Dashboard4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MagyNemzIdos_arany_15952528048810&#47;Dashboard4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1595621709208');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div style="height:50px" aria-hidden="true" class="wp-block-spacer" id="map3"></div>
+                        
+                <!-- 3  -->
+                <div class='tableauPlaceholder' id='viz1595620910550' style="position: relative; -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); margin: auto;"><noscript><a href='#'><img alt='65 év felettiek' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Le&#47;Legalabb65_15953520607440&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Legalabb65_15953520607440&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Le&#47;Legalabb65_15953520607440&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1595620910550');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div style="height:50px" aria-hidden="true" class="wp-block-spacer" id="map4"></div>
+                            
+                <!-- 4 -->
+                <div class='tableauPlaceholder' id='viz1595621001998' style="position: relative; -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); margin: auto;"><noscript><a href='#'><img alt='Háziorvosok' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Or&#47;Orvosok&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Orvosok&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Or&#47;Orvosok&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1595621001998');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div style="height:50px" aria-hidden="true" class="wp-block-spacer" id="map5"></div>
+                                
+                <!-- 5  -->
+                <div class='tableauPlaceholder' id='viz1595620969137' style="position: relative; -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); margin: auto;"><noscript><a href='#'><img alt='Kórházi ágyak' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ko&#47;Korhazi_agy_15953713227390&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Korhazi_agy_15953713227390&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ko&#47;Korhazi_agy_15953713227390&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1595620969137');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div style="height:50px" aria-hidden="true" class="wp-block-spacer" id="map6"></div>
+                                
+                <!-- 6 -->
+                <div class='tableauPlaceholder' id='viz1595621060330' style="position: relative; -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); margin: auto;"><noscript><a href='#'><img alt='Idegenforgalom' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Id&#47;Idegenf_15953635134200&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Idegenf_15953635134200&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Id&#47;Idegenf_15953635134200&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1595621060330');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                            
+            </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- Footer ================================================== -->
+
+    <div class="footer">
     <div class="container">
         <div class="row">
             
@@ -409,8 +254,8 @@
                         <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="terkepek.html" class="footer-link">Térképek</a></li>
                         <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="kimutatasok.html" class="footer-link">Kimutatások</a></li>
                         <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="meta-adatbazis.html" class="footer-link">Meta-adatbázis</a></li>
-                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="gyorsjelentések.html" class="footer-link">Gyorsjelentések</a></li>  
-                      </ul>
+                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="gyorsjelentesek.html" class="footer-link">Gyorsjelentések</a></li>  
+                        </ul>
                     </div>
                     <!--End Footer Column-->
                                             
@@ -426,79 +271,12 @@
             <div class="copyright-text">© 2020. NSKI</div>
         </div>
     </div>
-</div>
-<!--footer-->
+    </div>
+    <!--footer-->
 
-  <script>
-    // Get the modal
-    var modal = document.getElementsByClassName('modal');
-    
-    // Get the button that opens the modal
-    var btn = document.getElementsByClassName("myBtn");
-     
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close");
-    
-    // When the user clicks the button, open the modal 
-    btn[0].onclick = function() {
-        modal[0].style.display = "block";
-    }
-    
-    btn[1].onclick = function() {
-        modal[1].style.display = "block";
-    }
+    <a id="jump" href="#top"><img src="/assets/icons/arrowDown.png" alt="Ugrás fel"></a>
 
-    btn[2].onclick = function() {
-        modal[2].style.display = "block";
-    }
-
-    btn[3].onclick = function() {
-        modal[3].style.display = "block";
-    }
-
-    btn[4].onclick = function() {
-        modal[4].style.display = "block";
-    }
-
-    btn[5].onclick = function() {
-        modal[5].style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span[0].onclick = function() {
-        modal[0].style.display = "none";
-    }
-    
-    span[1].onclick = function() {
-        modal[1].style.display = "none";
-    }
-
-    span[2].onclick = function() {
-        modal[2].style.display = "none";
-    }
-
-    span[3].onclick = function() {
-        modal[3].style.display = "none";
-    }
-
-    span[4].onclick = function() {
-        modal[4].style.display = "none";
-    }
-
-    span[5].onclick = function() {
-        modal[5].style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-  </script>
-
-  <script src="assets/js/cookie.notice.min.js"></script>
+    <script src="assets/js/cookie.notice.min.js"></script>
 
 </body>
 

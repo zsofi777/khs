@@ -18,7 +18,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/responsive.css"/>
-
+    <link rel="stylesheet" href="assets/css/min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
     <style>
@@ -29,6 +29,18 @@
             font-weight: 600; 
             margin: 0px;
             font-family: 'Open Sans', sans-serif;
+        }
+        .header-headline {
+            padding-bottom: 15px;
+            text-align: center !important;
+            font-size: 56px;
+            color: #fff;
+            background-image:url(assets/images/meta.png);
+            background-position-y: -288px;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
         }
         h3, .h3 {
             font-size: 28px;
@@ -47,7 +59,7 @@
             padding: 50px 20px 20px 20px;
             min-height: 170px;
             box-sizing: border-box;
-            border-left: 2px solid #6BB963;
+            border-left: 2px solid #365f92;
             font-weight: 600;
             width: 75%;             
         }
@@ -55,10 +67,10 @@
             text-decoration: none;
         }
         .Tree a:hover {
-            color: #282828 !important;
+            color: #1c1c1c !important;
         }
         .Tree a:active {
-            color: #282828 !important;
+            color: #1c1c1c !important;
         }
         .Desc {
             border: none;
@@ -70,7 +82,7 @@
             position: -webkit-sticky; /* Safari */
             position: sticky;
             top: 0;
-            border-left: 2px solid #6BB963;
+            border-left: 2px solid #365f92;
             width: 20%; 
             margin-left: 10px;
         }
@@ -92,13 +104,13 @@
             display: none;
         } 
         .jstree-open > a .jstree-icon {
-            background:url(https://img.icons8.com/metro/24/6BB963/chevron-down.png) 0px 0px no-repeat !important;
+            background:url(https://img.icons8.com/metro/24/365f92/chevron-down.png) 0px 0px no-repeat !important;
         }
         .jstree-closed > a .jstree-icon {
-            background:url(https://img.icons8.com/metro/24/6BB963/chevron-down.png) 0px 0px no-repeat !important;
+            background:url(https://img.icons8.com/metro/24/365f92/chevron-down.png) 0px 0px no-repeat !important;
         }
         .jstree-leaf > a .jstree-icon { 
-            background:url(https://img.icons8.com/metro/24/6BB963/chevron-up.png) 0px 0px no-repeat !important; 
+            background:url(https://img.icons8.com/metro/24/365f92/chevron-up.png) 0px 0px no-repeat !important; 
         }
         .glyphicon-leaf:before {
             display: none;
@@ -120,7 +132,7 @@
             font-weight: bold;
         }
         .jstree-anchor .jstree-clicked .jstree-hovered {
-            color: #282828;
+            color: #1c1c1c;
         }
         .jstree-default .jstree-clicked {
             background: #fff;
@@ -142,7 +154,7 @@
             height: auto !important;
         }
         .jstree a:focus {
-            color: #282828 !important;
+            color: #1c1c1c !important;
             padding: 4px;
         }
         .jstree-default a.jstree-loading .jstree-icon { 
@@ -152,7 +164,7 @@
             background: url("assets/images/loader.gif") center center no-repeat !important; 
         } 
         .jstree-default .jstree-search {
-            color: #6000CE;
+            color: #365f92;
             font-weight: 600;
         } 
         #search {
@@ -167,7 +179,7 @@
             box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.3);
         }
         #search input:focus {
-            border: 2px solid #6BB963 !important;
+            border: 2px solid #365f92 !important;
         }
         #search_tree {
             background-color: #365f92;
@@ -190,168 +202,170 @@
 
 <body>
 
-<!-- Navigation================================================== -->
-<div class="hero-background">
-    <div class="container">
+    <!-- Navigation================================================== -->
+    <div class="hero-background">
+        <div class="container">
 
-        <div class="header-container header">
-            <a class="navbar-brand logo" href="index.html"> 
-                <span class="logoKHS"></span>
-            </a>
-            <a class="navbar-brand logo" href="http://nski.hu/" style="margin-left: -3%;"> 
-                <span class="logoNSKI"></span>
-            </a>
-            <!--<a href="#email-form">
-                <button class="header-btn"> Download FREE!</button>
-            </a>-->
-            <div class="header-right">
-                <a class="navbar-item" href="aktualitasok.html">Aktualitások</a>
-                <a class="navbar-item" href="terkepek.html">Térképek</a>
-                <a class="navbar-item" href="kimutatasok.html">Kimutatások</a>
-                <a class="navbar-item" href="meta-adatbazis.html" style="color: #6BB963;">Meta-adatbázis</a>
-                <a class="navbar-item" href="gyorsjelentések.html">Gyorsjelentések</a>
+            <div class="header-container header">
+                <a class="navbar-brand logo" href="index.html"> 
+                    <span class="logoKHS"></span>
+                </a>
+                <a class="navbar-brand logo" href="http://nski.hu/" style="margin-left: -3%;"> 
+                    <span class="logoNSKI"></span>
+                </a>
+                <!--<a href="#email-form">
+                    <button class="header-btn"> Download FREE!</button>
+                </a>-->
+                <div class="header-right">
+                    <a class="navbar-item" href="aktualitasok.html">Aktualitások</a>
+                    <a class="navbar-item" href="terkepek.html">Térképek</a>
+                    <a class="navbar-item" href="kimutatasok.html">Kimutatások</a>
+                    <a class="navbar-item" href="meta-adatbazis.html" style="color: #6BB963;">Meta-adatbázis</a>
+                    <a class="navbar-item" href="gyorsjelentesek.html">Gyorsjelentések</a>
+                </div>
             </div>
-        </div>
-<!--navigation-->
-        <div class="hero row">
-            <div class="col-sm-12 col-sm-12">
-                <h1 class="header-headline bold" style="padding: 132px 0px;">META-ADATBÁZIS</h1>
-                <div class="header-running-text light">
-                    <div style="margin-top: 50px;">
-                        <p style="line-height: 1.9em; font-size: 16px; text-align: justify;">Ez az oldal rendszerezve és kereshető formában adja közre az NSKI által a Kárpát-haza statisztikák részévé tett adatok metaadatait, legalábbis azoknak egy jelentős részét (a nagyobb részük feldolgozása még zajlik). Kulcsszavas kereséssel vagy a lenti olvasható három rendezőszempont – mutató témakörök, országok, területi szintek – felől közelítve, egy fastruktúra mentén lehet böngészni a mutatók között. Az itt megjelenített mutatók adatai az NSKI-ban elérhetők és igényelhetők (és a még ezen túlmutató, mataadatokkal nem feldolgozott adatok is).
-                        E mutatók adatait Magyarország a környező országok statisztikai hivatalai vagy nyilvántartásai gyűjtik, vagy az NSKI saját felmerésiből származnak. Jelenleg még folyamatban az összesen mintegy 40 ezer mutató teljes feldolgozása, ami végezetül mintegy 30 ezer rekordszámú metaadatbázist fog eredményezni. A metaadatbázis végső formájában kimutatja a két vagy több országban megegyező módon gyűjtött, így egymással összehasonlítható mutatókat is (ezt jelenleg a fastruktúrájú metaadatbázisban böngészve tudja megtenni a felhasználó).
-                        Jelen metaadat adatbázis az NSKI nagymintás felméréseiben gyűjtött minden mutató leírását is tartalmazza (ld. <strong><a style="font-size: 16px;" href="http://nski.hu/admin/data/file/20200707/karpat-medencei_magyarok_tars-gazd_adatai_tanulm.pdf"><i>Életminőség és jólét 2018-2019</i></a></strong>).
-                        </p>
+    <!--navigation-->
+            <div class="hero row">
+                <div class="col-sm-12 col-sm-12">
+                    <h1 class="header-headline bold" style="padding: 132px 0px;">META-ADATBÁZIS</h1>
+                    <div class="header-running-text light">
+                        <div style="margin-top: 50px;">
+                            <p style="line-height: 1.9em; font-size: 16px; text-align: justify;">Ez az oldal rendszerezve és kereshető formában adja közre az NSKI által a Kárpát-haza statisztikák részévé tett adatok metaadatait, legalábbis azoknak egy jelentős részét (a nagyobb részük feldolgozása még zajlik). Kulcsszavas kereséssel vagy a lenti olvasható három rendezőszempont – mutató témakörök, országok, területi szintek – felől közelítve, egy fastruktúra mentén lehet böngészni a mutatók között. Az itt megjelenített mutatók adatai az NSKI-ban elérhetők és igényelhetők (és a még ezen túlmutató, mataadatokkal nem feldolgozott adatok is).
+                            E mutatók adatait Magyarország a környező országok statisztikai hivatalai vagy nyilvántartásai gyűjtik, vagy az NSKI saját felmerésiből származnak. Jelenleg még folyamatban az összesen mintegy 40 ezer mutató teljes feldolgozása, ami végezetül mintegy 30 ezer rekordszámú metaadatbázist fog eredményezni. A metaadatbázis végső formájában kimutatja a két vagy több országban megegyező módon gyűjtött, így egymással összehasonlítható mutatókat is (ezt jelenleg a fastruktúrájú metaadatbázisban böngészve tudja megtenni a felhasználó).
+                            Jelen metaadat adatbázis az NSKI nagymintás felméréseiben gyűjtött minden mutató leírását is tartalmazza (ld. <strong><a style="font-size: 16px;" href="http://nski.hu/admin/data/file/20200707/karpat-medencei_magyarok_tars-gazd_adatai_tanulm.pdf"><i>Életminőség és jólét 2018-2019</i></a></strong>).
+                            </p>
+                        </div>
                     </div>
-                </div>
-                
-                
-                <div class="container" style="padding-bottom: 5%; padding-top: 2%;">
-                    <div class="wrapper clearfix">
-                        <fieldset id="search">
-                            <input type="text" name="search_field" id="search_field" value="" />
-                            <button id="search_tree">KERESÉS</button>
-                        </fieldset>
-                        
-                        <div id="FaDoboz" class="Tree">
-                            <h3>Mutatók</h3>
-                            <div id="SimpleJSTree" class="jstree jstree-1 jstree-default" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="Kat1002" aria-busy="false">
-                                <ul class="jstree-container-ul jstree-children" role="group">
-                                    <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1001_anchor" aria-expanded="false" id="Kat1001" class="jstree-node  jstree-closed">
-                                        <i class="jstree-icon jstree-ocl" role="presentation"></i>
-                                        <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1001_anchor">
-                                            <i class="jstree-icon jstree-themeicon" role="presentation"></i>Általános gazdasági mutatók
-                                        </a>
-                                    </li>
-                                    <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1002_anchor" aria-expanded="false" id="Kat1002" class="jstree-node  jstree-closed">
-                                        <i class="jstree-icon jstree-ocl" role="presentation"></i>
-                                        <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1002_anchor">
-                                            <i class="jstree-icon jstree-themeicon" role="presentation"></i>Gazdasági ágazatok
-                                        </a>
-                                    </li>
-                                    <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1003_anchor" aria-expanded="false" id="Kat1003" class="jstree-node  jstree-closed">
-                                        <i class="jstree-icon jstree-ocl" role="presentation"></i>
-                                        <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1003_anchor">
-                                            <i class="jstree-icon jstree-themeicon" role="presentation"></i>Környezet
-                                        </a>
-                                    </li>
-                                    <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1004_anchor" aria-expanded="false" id="Kat1004" class="jstree-node  jstree-closed">
-                                        <i class="jstree-icon jstree-ocl" role="presentation"></i>
-                                        <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1004_anchor">
-                                            <i class="jstree-icon jstree-themeicon" role="presentation"></i>Népesség, népmozgalom
-                                        </a>
-                                    </li>
-                                    <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1005_anchor" aria-expanded="false" id="Kat1005" class="jstree-node  jstree-closed jstree-last">
-                                        <i class="jstree-icon jstree-ocl" role="presentation"></i>
-                                        <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1005_anchor">
-                                            <i class="jstree-icon jstree-themeicon" role="presentation"></i>Társadalom
-                                        </a>
-                                    </li>
-                                </ul>
+                    
+                    
+                    <div class="container" style="padding-bottom: 5%; padding-top: 2%;">
+                        <div class="wrapper clearfix">
+                            <fieldset id="search">
+                                <input type="text" name="search_field" id="search_field" value="" />
+                                <button id="search_tree">Kulcsszavas keresés</button>
+                            </fieldset>
+                            
+                            <div id="FaDoboz" class="Tree">
+                                <h3>Mutatók</h3>
+                                <div id="SimpleJSTree" class="jstree jstree-1 jstree-default" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="Kat1002" aria-busy="false">
+                                    <ul class="jstree-container-ul jstree-children" role="group">
+                                        <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1001_anchor" aria-expanded="false" id="Kat1001" class="jstree-node  jstree-closed">
+                                            <i class="jstree-icon jstree-ocl" role="presentation"></i>
+                                            <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1001_anchor">
+                                                <i class="jstree-icon jstree-themeicon" role="presentation"></i>Általános gazdasági mutatók
+                                            </a>
+                                        </li>
+                                        <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1002_anchor" aria-expanded="false" id="Kat1002" class="jstree-node  jstree-closed">
+                                            <i class="jstree-icon jstree-ocl" role="presentation"></i>
+                                            <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1002_anchor">
+                                                <i class="jstree-icon jstree-themeicon" role="presentation"></i>Gazdasági ágazatok
+                                            </a>
+                                        </li>
+                                        <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1003_anchor" aria-expanded="false" id="Kat1003" class="jstree-node  jstree-closed">
+                                            <i class="jstree-icon jstree-ocl" role="presentation"></i>
+                                            <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1003_anchor">
+                                                <i class="jstree-icon jstree-themeicon" role="presentation"></i>Környezet
+                                            </a>
+                                        </li>
+                                        <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1004_anchor" aria-expanded="false" id="Kat1004" class="jstree-node  jstree-closed">
+                                            <i class="jstree-icon jstree-ocl" role="presentation"></i>
+                                            <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1004_anchor">
+                                                <i class="jstree-icon jstree-themeicon" role="presentation"></i>Népesség, népmozgalom
+                                            </a>
+                                        </li>
+                                        <li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1005_anchor" aria-expanded="false" id="Kat1005" class="jstree-node  jstree-closed jstree-last">
+                                            <i class="jstree-icon jstree-ocl" role="presentation"></i>
+                                            <a class="jstree-anchor" href="#" tabindex="-1" id="Kat1005_anchor">
+                                                <i class="jstree-icon jstree-themeicon" role="presentation"></i>Társadalom
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
 
-                        <div id="Leiro" class="Desc">
-                            <h3>Leírás</h3>
-                            <div id="data"></div>
-                        </div>
-                    </div>    
-                </div>
-        
-            </div>
-        </div>
-
-    </div>    
-</div>
-  
-<!-- Footer================================================== -->
-
-<div class="footer">
-    <div class="container">
-        <div class="row">
+                            <div id="Leiro" class="Desc">
+                                <h3>Mutatók leírása</h3>
+                                <div id="data"></div>
+                            </div>
+                        </div>    
+                    </div>
             
-            <!--Big Column-->
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="row">
+                </div>
+            </div>
 
-                    <!--Footer Column-->
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="contact-widget">
-                            <a class="navbar-brand logo" style="margin-top: 4%; margin-left: -1%;" href="index.html"> 
-                                <span class="logoKHSfooter"></span>
-                            </a>
-                            <div class="widget-content">
-                                <h4 style="font-size: 16px; padding-top: 66px; color: #1c1c1c;"></h4>
-                            </div>
-                            <div class="widget-content">
-                                <a class="navbar-brand logo" href="http://nski.hu/"> 
-                                    <img class="logo3" src="assets/icons/logoNSKIfooter.png" alt="NSKI logó"/>
+        </div>    
+    </div>
+    
+    <!-- Footer================================================== -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <!--Big Column-->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+
+                        <!--Footer Column-->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="contact-widget">
+                                <a class="navbar-brand logo" style="margin-top: 4%; margin-left: -1%;" href="index.html"> 
+                                    <span class="logoKHSfooter"></span>
                                 </a>
+                                <div class="widget-content">
+                                    <h4 style="font-size: 16px; padding-top: 66px; color: #1c1c1c;"></h4>
+                                </div>
+                                <div class="widget-content">
+                                    <a class="navbar-brand logo" href="http://nski.hu/"> 
+                                        <img class="logo3" src="assets/icons/logoNSKIfooter.png" alt="NSKI logó"/>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <!--End Footer Column-->
+                        
+                        <!--Footer Column-->
+                        <div class="col-md-4 col-sm-4 col-xs-12" style="text-align: center;">
+                            <div class="posts-widget">
+                                <h2>Információk</h2>
+                                <div class="widget-content">
+                                    <ul class="rules-links" style="padding-left: 0; font-size: 16px;">
+                                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="adatkezeles-rendje.html" class="footer-link">Adatkezelés rendje</a></li>                                   
+                                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="impresszum.html" class="footer-link">Impresszum</a></li>
+                                    </ul> 
+                                </div> 
+                            </div>	                                 	
+                        </div><!--End Footer Column-->
+                        
+                        <!--Footer Column-->
+                        <div class="col-md-4 col-sm-4 col-xs-12" style="text-align: right;">
+                            <h2 class="ftco-heading-2">Linkek</h2>
+                            <ul class="list-unstyled">
+                            <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="aktualitasok.html" class="footer-link">Aktualitások</a></li>
+                            <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="terkepek.html" class="footer-link">Térképek</a></li>
+                            <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="kimutatasok.html" class="footer-link">Kimutatások</a></li>
+                            <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="meta-adatbazis.html" class="footer-link">Meta-adatbázis</a></li>
+                            <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="gyorsjelentesek.html" class="footer-link">Gyorsjelentések</a></li>   
+                        </ul>
+                        </div>
+                        <!--End Footer Column-->
+                                                
                     </div>
-                    <!--End Footer Column-->
-                    
-                    <!--Footer Column-->
-                    <div class="col-md-4 col-sm-4 col-xs-12" style="text-align: center;">
-                        <div class="posts-widget">
-                            <h2>Információk</h2>
-                            <div class="widget-content">
-                                <ul class="rules-links" style="padding-left: 0; font-size: 16px;">
-                                    <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="adatkezeles-rendje.html" class="footer-link">Adatkezelés rendje</a></li>                                   
-                                    <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="impresszum.html" class="footer-link">Impresszum</a></li>
-                                </ul> 
-                            </div> 
-                        </div>	                                 	
-                    </div><!--End Footer Column-->
-                    
-                    <!--Footer Column-->
-                    <div class="col-md-4 col-sm-4 col-xs-12" style="text-align: right;">
-                        <h2 class="ftco-heading-2">Linkek</h2>
-                        <ul class="list-unstyled">
-                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="aktualitasok.html" class="footer-link">Aktualitások</a></li>
-                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="terkepek.html" class="footer-link">Térképek</a></li>
-                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="kimutatasok.html" class="footer-link">Kimutatások</a></li>
-                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="meta-adatbazis.html" class="footer-link">Meta-adatbázis</a></li>
-                        <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="gyorsjelentések.html" class="footer-link">Gyorsjelentések</a></li>   
-                    </ul>
-                    </div>
-                    <!--End Footer Column-->
-                                            
                 </div>
+                <!--End Big Column-->
+                
             </div>
-            <!--End Big Column-->
-            
+        </div>
+        <!--container-->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="copyright-text">© 2020. NSKI</div>
+            </div>
         </div>
     </div>
-    <!--container-->
-    <div class="footer-bottom">
-        <div class="auto-container">
-            <div class="copyright-text">© 2020. NSKI</div>
-        </div>
-    </div>
-</div>
-<!--footer-->
+    <!--footer-->
+
+    <a id="jump" href="#top"><img src="/assets/icons/arrowDown.png" alt="Ugrás fel"></a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/jstree.min.js"></script>

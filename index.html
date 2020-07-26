@@ -20,12 +20,53 @@
     <link rel="stylesheet" href="assets/css/responsive.css"/>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <style>
+        #ul {
+        width: 100%;
+        font-size: 10pt;
+        -webkit-box-shadow: 0 0 1em #777777;
+        box-shadow: 0 0 1em #777777;
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        text-transform: uppercase;
+        }
+        #li a {
+          display: block;
+          color: #1c1c1c;
+          text-align: justify;
+          padding: 7px 50px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        #li a:hover {
+          background-color: #366092 !important;
+          color: #fff !important;
+        }
+        h3 {
+           font-size: 24px !important;
+        }
+        p {
+           font-size: 16px;
+           text-align: justify;
+        }
+        .features-container {
+            max-width: 878px;
+        }
+        @media (min-width: 768px) {
+            .col-sm-3 {
+                width: 20%;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
 
     <!-- Navigation================================================== -->
-    <div class="hero-background">
+    <div class="hero-background" id="top">
         <div class="container">
             <div class="header-container header">
                 <a class="navbar-brand logo" href="index.html"> 
@@ -42,7 +83,7 @@
                     <a class="navbar-item" href="terkepek.html">Térképek</a>
                     <a class="navbar-item" href="kimutatasok.html">Kimutatások</a>
                     <a class="navbar-item" href="meta-adatbazis.html">Meta-adatbázis</a>
-                    <a class="navbar-item" href="gyorsjelentések.html">Gyorsjelentések</a>
+                    <a class="navbar-item" href="gyorsjelentesek.html">Gyorsjelentések</a>
                 </div>
             </div>
     <!--navigation-->
@@ -62,62 +103,28 @@
                             </ul>
                             
                             <p id="khs" style="text-align: justify;"></p>
-                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 50px; margin-bottom: 20px;"><strong>Kárpát-haza statisztikák küldetése</strong></p>
+                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 50px; margin-bottom: 10px;"><strong>Kárpát-haza statisztikák küldetése</strong></p>
                             <p style="text-align: justify;">A Kárpát-haza statisztikák oldalain közzétett adatbázisok <strong>kutatói infrastruktúrát</strong> nyújtanak a Kárpát-medencei magyarság kutatásához, egyúttal támogatják a közszféra Kárpát-medencei kitekintésű műveleteivel kapcsolatos <strong>döntések előkészítését</strong>, segítik a fejlesztések tervezését, megvalósítását, értékelését. </p>
                             
                             <p id="ig" style="text-align: justify;"></p>
-                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 50px; margin-bottom: 20px;"><strong>Az adatigénylés módja</strong></p>
+                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 30px; margin-bottom: 10px;"><strong>Az adatigénylés módja</strong></p>
                             <p style="text-align: justify;">Az itt megjelenített térképeken, diagramokon szereplő adatok, valamint a közzétett metaadatok által leírt mutatók adatai elérhetők a Nemzetstratégiai Kutatóintézetnél. Az adatok e-mail küldésével igényelhetők tervezési és tudományos kutatási tevékenységekhez 
                             <strong>(<a href="mailto:gabor.mozga@nski.gov.hu">gabor.mozga@nski.gov.hu</a>)</strong>.</p>
                             
                             <p id="korny" style="text-align: justify;"></p>
-                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 50px; margin-bottom: 20px;"><strong>Adattartalmak: Környező országok statisztikái és nyilvántartásai</strong></p>
+                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 30px; margin-bottom: 10px;"><strong>Adattartalmak: Környező országok statisztikái és nyilvántartásai</strong></p>
                             <p style="text-align: justify;">Ezeken az oldalakon az NSKI teljes adatgyűjtésének csak töredéke kerül megjelenítésre. Az itt közzétett <strong>metaadatok</strong> azonban már a jelentős részét leírják azoknak a mutatóknak, amelyekhez tartozó adatsorok az NSKI-ban rendszerezetten hozzáférhetők. Ugyanakkor a mutatók többsége esetében a metaadatok feldolgozása és az egyes országok között megfeleltethető mutatók azonosítása még folyamatban van.
                             A Nemzetstratégiai Kutatóintézet fennállása óta több tízezer mutató több milliónyi adatát gyűjtötte össze Magyarországról és különösen a környező országokból. Az adatok között találunk nyilvános, digitális vagy analóg formában elérhető statisztikai adatokat, és az európai, valamint országos felmérésekből és nyilvántartásokból származó adatokat. Ezeknek az adatoknak a gyűjtése, frissítése és feldolgozása folyamatos. Ez az adatvagyon egy egységes Kárpát-medencei magyar statisztikai információs rendszer alapja lehet. 
                             <br>Ld. bővebben a Kárpát-medencei magyarság statisztikai adatellátottságáról: a kutatási jelentés elérhető <strong><a href="http://nski.hu/admin/data/file/20200707/karpat-medencei_magyarok_tars-gazd_adatai_tanulm.pdf">itt</a></strong>.</p>
                             
                             <p id="nski" style="text-align: justify;"></p>
-                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 50px; margin-bottom: 20px;"><strong>Adattartalmak: Az NSKI saját adatfelmérései</strong></p>
+                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 30px; margin-bottom: 10px;"><strong>Adattartalmak: Az NSKI saját adatfelmérései</strong></p>
                             <p style="text-align: justify;">Statisztikai adatokon keresztül csak korlátosan lehet vizsgálni a Kárpát-medencei magyarságot és településterületét. Ezért az NSKI saját nagymintás, a nagyobb nemzetrészekben reprezentatív felméréseket is indított (<i>Életminőség és jólét 2018-2019</i>). E felmérés adatai alkalmasak rá, hogy tájékoztassanak a magyar nemzetrészek jóllétéről, valamint egymáshoz és – további elemzésekkel – a többségi nemzetekhez viszonyított társadalmi és gazdasági pozícióiról. A felmerés adatainak egy része is megjelenítésre kerül itt, és e felmérés összes adatai is igényelhetők. 
                             <br>Ld. bővebben e nagymintás felmérésről: a kutatási jelentés elérhető <strong><a href="http://nski.hu/admin/data/file/20200707/karpat-medencei_magyarok_tars-gazd_adatai_tanulm.pdf">itt</a></strong>.</p>
                             
                             <p id="proj" style="text-align: justify;"></p>
-                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 50px; margin-bottom: 20px;"><strong>Az adatbázis kifejlesztését támogató projektek</strong></p>
+                            <p style="font-size: 20px; font-family: 'Oswald', sans-serif; color: #366092 !important; margin-top: 30px; margin-bottom: 10px;"><strong>Az adatbázis kifejlesztését támogató projektek</strong></p>
                             <p style="text-align: justify;">Az <strong><a href="http://nski.hu/efop-3-10-1-17-2017-00002.html">EFOP 3.10.1-17-2017-00002</a></strong> azonosító számú <i>Az oktatási struktúrák Kárpát-medencei makroregionális együttműködését támogató kutatások</i> elnevezésű és az <strong><a href="http://nski.hu/efop-1-12-17-2017-00003_hu.html">EFOP 1.12.1-17-2017-00003</a></strong> azonosító számú <i>Makroregionális kutatások a Kárpát-medencében a közösségfejlesztés és társadalmi felelősségvállalás megerősítése érdekében</i> nevet viselő európai uniós finanszírozású projektek segítségével készült el az adatbázis.</p>
-                    
-                            <style>
-                                #ul {
-                                width: 100%;
-                                font-size: 10pt;
-                                -webkit-box-shadow: 0 0 1em #777777;
-                                box-shadow: 0 0 1em #777777;
-                                text-align: center;
-                                list-style-type: none;
-                                padding: 0;
-                                text-transform: uppercase;
-                                }
-                                #li a {
-                                  display: block;
-                                  color: #1c1c1c;
-                                  text-align: justify;
-                                  padding: 17px 18px;
-                                  text-decoration: none;
-                                  font-weight: bold;
-                                }
-                                #li a:hover {
-                                  background-color: #1c1c1c !important;
-                                  color: #fff !important;
-                                }
-                                h3 {
-                                   font-size: 24px !important;
-                                }
-                                p {
-                                   font-size: 16px;
-                                }
-                                </style>
-                    
-                    
-                    
                     
                     </div>
                     <!--<a href="#email-form">
@@ -155,7 +162,7 @@
             <div class="col-sm-3 feature">
                 <a href="terkepek.html">
                     <div class="feature-icon feature-no-display feature-display-mid">
-                        <img class="feature-img" src="assets/icons/terkepek.png" alt="Térképek ikon"/>
+                        <img class="feature-img" style="max-width: 26px;" src="assets/icons/terkepek.png" alt="Térképek ikon"/>
                     </div>
                 </a>    
                 <h5 class="feature-head-text feature-no-display feature-display-mid">TÉRKÉPEK</h5>
@@ -164,7 +171,7 @@
             <div class="col-sm-3 feature">
                 <a href="kimutatasok.html">
                     <div class="feature-icon feature-no-display feature-display-last">
-                        <img class="bullet-img" src="assets/icons/adattablak.png" alt="Kimutatások ikon"/>
+                        <img class="bullet-img" src="assets/icons/kimutatasok.png" alt="Kimutatások ikon"/>
                     </div>
                 </a>
                 <h5 class="feature-head-text feature-no-display feature-display-last">KIMUTATÁSOK</h5>
@@ -177,6 +184,15 @@
                     </div>
                 </a>    
                 <h5 class="feature-head-text feature-no-display feature-display-last">META-ADATBÁZIS</h5>
+            </div>
+
+            <div class="col-sm-3 feature">
+                <a href="gyorsjelentesek.html">
+                    <div class="feature-icon feature-no-display feature-display-last">
+                        <img class="bullet-img" src="assets/icons/gyorsjelentesek.png" alt="Gyorsjelentések ikon"/>
+                    </div>
+                </a>    
+                <h5 class="feature-head-text feature-no-display feature-display-last">GYORSJELENTÉSEK</h5>
             </div>
         </div> <!--features-container-->
     </div> <!--features-section-->
@@ -409,7 +425,7 @@
                             <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="terkepek.html" class="footer-link">Térképek</a></li>
                             <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="kimutatasok.html" class="footer-link">Kimutatások</a></li>
                             <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="meta-adatbazis.html" class="footer-link">Meta-adatbázis</a></li>
-                            <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="gyorsjelentések.html" class="footer-link">Gyorsjelentések</a></li>    
+                            <li style="padding-bottom: 1rem; padding-top: 1rem;"><a href="gyorsjelentesek.html" class="footer-link">Gyorsjelentések</a></li>    
                         </ul>
                         </div>
                         <!--End Footer Column-->
@@ -428,6 +444,8 @@
         </div>
     </div>
     <!--footer-->
+
+    <a id="jump" href="#top"><img src="/assets/icons/arrowDown.png" alt="Ugrás fel"></a>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
